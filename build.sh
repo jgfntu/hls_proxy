@@ -2,6 +2,8 @@
 
 #add by juguofeng	2013-01-28
 
+cd jni/liveTV/
+
 ANDROID="android"
 LINUX="linux"
 

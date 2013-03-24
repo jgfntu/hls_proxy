@@ -1,0 +1,31 @@
+1、工程功能说明：
+	本hls_proxy实现HTTP Live Streaming的协议，参照VLC和FFMPEG的相关代码，利用开源的libcurl和mongoose实现了一个hls的代理，原本HLS协议的流媒体就变为了普通的HTTP的流媒体，这样的话，原本实现了HTTP流媒体的系统（或代码工程）就可以直接请求这个hls_proxy就可以实现HLS的直播协议了。
+	
+	
+2、工程编译方法
+	（1）若编译ubuntu的版本，需要系统安装了libcurl的库，然后进入工程根目录，sh build.sh linux既可以在jni/liveTV目录下生成一个httplive的可执行文件，直播的地址已经内置了，可以在同一台ubuntu上运行VLC，在其打开网络流窗口中输入http://localhost:8080/livetv.ts即可以观看直播流。
+	（2）若编译android的版本，需要系统中配置了android-ndk-r8b等类似版本的NDK环境，然后在项目根目录下运行sh build.sh android，就可以在libs/armeabi/下生成jni的so库；将工程根目录下的androd工程导入eclipse编译，就可以生成一个演示版的直播电视apk
+	
+	
+3、注意点：
+	（1）ubuntu版的url是代码内置的，在jni/liveTV/main_live.c，可能有些地址某天不能使用，当不能播放是请尝试其他地址。关闭时，先关闭VLC播放器，然后等待命令行打出的主线程退出的提示，ctrl+C关闭即可。
+	（2）android版，java代码仅仅是演示，有12个测试台，请确保WIFI已经打开（3G模式请留意流量限制），打开时会默认播放第一个台，可以尝试切台，但切换速度不佳。需要特别注意！！！运行该apk时，需要你的手机支持http ts流的解析，我知道的是三星android4.0以下的机子的mediaPlayer接口是不支持的。
+	
+	
+4、代码结构简述
+	（1）主要代码分布在jni/liveTV/下，有5个部分，curl部分，链接了jni/arm-linux-androideabi/下面的libcurl的库，其编译方式见博客http://blog.chinaunix.net/uid-25272011-id-3491433.html，主要负责http的下载
+	（2）m3u8协议解析部分，负责HLS协议解析
+	（3）mongoose主要负责数据转发，HLS将一段一段的ts数据入队列，mongoose负责将队列里面的数据发送给client端
+	（4）jni部分是一个android jni的接口，负责双向方法的调用
+	（5）main_live.c主要负责ubuntu和android平台的调用选择，统一管理，每一个台是一个独立的对象
+	
+	
+5、补充：
+	版本还处于完善当中，有关线程的管理等还不健全，有时也会有内存错误；我主要关注的是android部分的接口，android是将mongoose作为一个内部的web server的，android先调用prepare接口将直播的url传送个hls proxy，当proxy下载到数据后，会以事件方式通过jni接口通知给java代码，然后mediaPlayer在setDataSource，这时的source就是本地http://localhost:8080/livetv.ts，这样就可以播放了；切台是也是，先调用prepare接口将直播的url传送个hls proxy，有数据来了才停播当前台，播放下一个台。
+	android的apk有时需要手动在设置里面停止一下才行，主要是退出接口不完善，导致jni的so库没有从内存卸载。
+	
+====================
+以上	2013-03-24	如果有疑问请联系jgfntu@gmail.com	本人也是新手，代码风格和注释质量不是很高，欢迎指导。另外，最近业余在开发faplayer，想开发一个纯软解的android apk，由于android java经验匮乏，还在学习中，欢迎共同开发。
+
+
+	
