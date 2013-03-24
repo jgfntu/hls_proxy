@@ -1,0 +1,686 @@
+02-17 17:49:40.179: D/dalvikvm(740): GC_EXPLICIT freed 944K, 61% free 5955K/15175K, paused 2ms+4ms, total 34ms
+02-17 17:49:40.968: D/dalvikvm(740): GC_CONCURRENT freed 1251K, 58% free 6432K/15175K, paused 4ms+13ms, total 51ms
+02-17 17:49:41.136: D/dalvikvm(740): GC_CONCURRENT freed 270K, 48% free 8005K/15175K, paused 3ms+4ms, total 56ms
+02-17 17:49:41.136: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 42ms
+02-17 17:49:41.136: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 36ms
+02-17 17:49:41.136: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 35ms
+02-17 17:49:41.136: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 35ms
+02-17 17:49:41.140: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 18ms
+02-17 17:49:41.269: D/dalvikvm(740): GC_FOR_ALLOC freed 2044K, 50% free 7623K/15175K, paused 34ms, total 41ms
+02-17 17:49:41.375: D/dalvikvm(740): GC_CONCURRENT freed 516K, 42% free 8857K/15175K, paused 3ms+8ms, total 76ms
+02-17 17:49:41.375: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 57ms
+02-17 17:49:41.378: D/dalvikvm(740): WAIT_FOR_CONCURRENT_GC blocked 53ms
+02-17 17:49:41.492: D/dalvikvm(740): GC_FOR_ALLOC freed 2096K, 41% free 8986K/15175K, paused 34ms, total 42ms
+02-17 17:49:41.589: D/dalvikvm(740): GC_CONCURRENT freed 49K, 36% free 9816K/15175K, paused 3ms+17ms, total 98ms
+02-17 17:49:43.546: I/ActivityManager(335): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.hoperun.live/.activity.PlayVideoActivity u=0} from pid 740
+02-17 17:49:43.636: D/dalvikvm(9539): Late-enabling CheckJNI
+02-17 17:49:43.664: I/ActivityManager(335): Start proc com.hoperun.live for activity com.hoperun.live/.activity.PlayVideoActivity: pid=9539 uid=10048 gids={3003, 1015, 1028}
+02-17 17:49:43.683: D/dalvikvm(140): GC_EXPLICIT freed 38K, 74% free 2160K/8195K, paused 1ms+2ms, total 31ms
+02-17 17:49:43.722: D/dalvikvm(140): GC_EXPLICIT freed <1K, 74% free 2160K/8195K, paused 2ms+5ms, total 37ms
+02-17 17:49:43.757: D/dalvikvm(140): GC_EXPLICIT freed <1K, 74% free 2160K/8195K, paused 1ms+6ms, total 33ms
+02-17 17:49:43.796: I/ActivityThread(9539): Pub com.LiveTv.db.channeldataprovider: com.hoperun.live.util.db.ChannelDataProvider
+02-17 17:49:43.796: D/LiveTvApplication(9539): onCreate---->
+02-17 17:49:43.800: D/LiveTvApplication(9539): initDBConfig---->
+02-17 17:49:43.800: D/DBTool(9539): hoperun--init------>com.hoperun.live.LiveTvApplication@40daeb98
+02-17 17:49:43.816: D/skia(9539): new locale zh_CN
+02-17 17:49:43.843: D/PlayVideoActivity(9539): hoperun--onCreate------------>
+02-17 17:49:43.976: D/VideoView(9539): hoperun--initVideoView-------------
+02-17 17:49:44.000: D/dalvikvm(9539): Trying to load lib /data/data/com.hoperun.live/lib/libhlsjni.so 0x40da1e88
+02-17 17:49:44.003: D/dalvikvm(9539): Added shared lib /data/data/com.hoperun.live/lib/libhlsjni.so 0x40da1e88
+02-17 17:49:44.003: I/hlsjni(9539): JNI interface loaded.
+02-17 17:49:44.003: V/LibActivate(9539): MediaProxy()...... 
+02-17 17:49:44.003: I/hlsjni(9539): get into libhlsjni.so...
+02-17 17:49:44.003: I/hlsjni(9539): hls create a new thread...
+02-17 17:49:44.007: D/PlayVideoActivity(9539): hoperun--onCreate------------>end
+02-17 17:49:44.007: D/PlayVideoActivity(9539): hoperun--onResume---->pathUri=null
+02-17 17:49:44.007: E/hide.statusbar(9539): android.intent.hide.statusbar
+02-17 17:49:44.011: D/HttpUtil(9539): checkNetWork------->connectivityManager != null
+02-17 17:49:44.011: D/HttpUtil(9539): checkNetWork------->networkInfos != null
+02-17 17:49:44.011: D/HttpUtil(9539): checkNetWork------->return true
+02-17 17:49:44.011: D/PlayVideoActivity(9539): hoperun--showWaitProgress-----------------------
+02-17 17:49:44.015: I/hlsjni(9539): get into hls_main_thread
+02-17 17:49:44.015: D/hlsjni(9539): 
+--------------------------------------------------------------
+02-17 17:49:44.015: D/hlsjni(9539): 
+HLS proxy version 0.5.0, libhls_jni built Feb 17 2013 17:13:15
+02-17 17:49:44.015: D/hlsjni(9539): 
+--------------------------------------------------------------
+02-17 17:49:44.015: I/hlsjni(9539): hls create a new thread...
+02-17 17:49:44.015: D/ChannelDataOperate(9539): hoperun--initDBDefaultDatas----->sLauncher--false
+02-17 17:49:44.019: D/DBTool(9539): hoperun--query------>tableName= LastChannelTypeInfo
+02-17 17:49:44.023: I/hlsjni(9539): get into hls_mongoose_thread
+02-17 17:49:44.023: I/hlsjni(9539): >>>>>>>>>>>>>>>>>>>[libhlsjni has initialized]
+02-17 17:49:44.023: I/hlsjni(9539): get into hls_event_callback method
+02-17 17:49:44.023: I/hlsjni(9539): hls_event_callback: failed to get JNI environment, assuming native thread
+02-17 17:49:44.023: D/EventManager(9539): callback----->event = 258  mEventHandler.size()=1
+02-17 17:49:44.023: D/EventManager(9539): callback----->for   i= 0
+02-17 17:49:44.023: I/hlsjni(9539): get out of hls_event_callback method
+02-17 17:49:44.035: D/PlayVideoActivity(9539): hoperun--BroadcastReceiver------->action=android.net.conn.CONNECTIVITY_CHANGE
+02-17 17:49:44.039: D/HttpUtil(9539): checkNetWork------->connectivityManager != null
+02-17 17:49:44.039: D/HttpUtil(9539): checkNetWork------->networkInfos != null
+02-17 17:49:44.043: D/HttpUtil(9539): checkNetWork------->return true
+02-17 17:49:44.043: I/hlsjni(9539): Mongoose web server v. 3.5 started on port(s) 8080 with web root [/mnt/sdcard/]
+02-17 17:49:44.046: D/PlayVideoActivity(9539): hoperun--VideoPlayerEventHandler---->eventHandler=258
+02-17 17:49:44.046: D/PlayVideoActivity(9539): hoperun--eventHandler------>MediaPlayerInit------------
+02-17 17:49:44.046: I/hlsjni(9539): hls start preparing ===> 
+02-17 17:49:44.046: I/hlsjni(9539): Playback ===> []
+02-17 17:49:44.046: I/hlsjni(9539): hls create a new thread...
+02-17 17:49:44.046: D/dalvikvm(9539): Trying to load lib /data/data/com.hoperun.live/lib/libauth-mac.so 0x40da1e88
+02-17 17:49:44.050: I/hlsjni(9539): get into hls_live_thread
+02-17 17:49:44.050: I/hlsjni(9539): get into [hls_live_play] thread
+02-17 17:49:44.058: D/hlsjni(9539): ======>pointer [hls_ctx] = 0x2a0f9858
+02-17 17:49:44.058: D/hlsjni(9539): packet_queue_init
+02-17 17:49:44.062: D/dalvikvm(9539): Added shared lib /data/data/com.hoperun.live/lib/libauth-mac.so 0x40da1e88
+02-17 17:49:44.062: D/hlsjni(9539): first step...
+02-17 17:49:44.062: W/hlsjni(9539): Empty variants(first step)
+02-17 17:49:44.062: D/hlsjni(9539): free_variant_list success
+02-17 17:49:44.062: D/hlsjni(9539): packet_queue_destroy
+02-17 17:49:44.062: D/hlsjni(9539): destroy m3u8_download_q success
+02-17 17:49:44.062: I/hlsjni(9539): >>>>>>>>>>>>>>>>>>>[hls_live_play thread] exit...
+02-17 17:49:44.062: D/dalvikvm(9539): No JNI_OnLoad found in /data/data/com.hoperun.live/lib/libauth-mac.so 0x40da1e88, skipping init
+02-17 17:49:44.062: V/LibActivate(9539): LibActivate()...... 
+02-17 17:49:44.062: E/UpDateActivity(9539): packagename==com.hoperun.live
+02-17 17:49:44.066: D/HttpUtil(9539): checkNetWork------->connectivityManager != null
+02-17 17:49:44.066: D/HttpUtil(9539): checkNetWork------->networkInfos != null
+02-17 17:49:44.070: D/HttpUtil(9539): checkNetWork------->return true
+02-17 17:49:44.082: E/getServerVer(9539): updatexmlurl--->http://feiying.hoperun.com:8081/hoperun/update/forGeneric/update_egreat/ver/LiveTV
+02-17 17:49:44.089: I/ActivateUtil(9539): packageNames==com.hoperun.live
+02-17 17:49:44.101: D/DBTool(9539): hoperun--query------>tableName= collect
+02-17 17:49:44.121: E/getServerVer(9539): 1.01
+02-17 17:49:44.156: W/ChannelUtil(9539): no need update,lastUpdTime = 2013-2-6_12:57
+02-17 17:49:44.156: D/PlayVideoActivity(9539): hoperun--getChannelTypeFailed---->1:need update 0:no need update  i=0
+02-17 17:49:44.222: D/libEGL(9539): loaded /vendor/lib/egl/libEGL_POWERVR_SGX540_120.so
+02-17 17:49:44.234: D/libEGL(9539): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
+02-17 17:49:44.238: D/libEGL(9539): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
+02-17 17:49:44.316: D/OpenGLRenderer(9539): Enabling debug mode 0
+02-17 17:49:44.328: D/VideoView(9539): hoperun--surfaceCreated------------------>
+02-17 17:49:44.328: D/VideoView(9539): hoperun--surfaceChanged------------>
+02-17 17:49:44.511: E/UpDateActivity(9539): /storage/sdcard0/OTT/LiveTV_1.0.apk
+02-17 17:49:44.511: D/PlayVideoActivity(9539): hoperun--handleMessage---->GET CHANNEL SUCESS 
+02-17 17:49:44.511: D/PlayVideoActivity(9539): hoperun--showWaitProgress-----------------------
+02-17 17:49:44.523: I/ActivityManager(335): Displayed com.hoperun.live/.activity.PlayVideoActivity: +930ms
+02-17 17:49:44.558: D/ActivateUtil(9539): ------authStatus=1
+02-17 17:49:44.562: D/ChannelDataOperate(9539): hoperun--queryChannelByType----->type = -1
+02-17 17:49:44.578: D/DBTool(9539): hoperun--queryBySql-->sql=select * from channel a left join collect b on a.channelInfo_name=b.channel_name
+02-17 17:49:44.632: D/ChannelDataOperate(9539): hoperun--getInfoByCursor----->isLaunch=false count = 207 isJoinTable=true
+02-17 17:49:44.726: D/PlayVideoActivity(9539): hoperun--initData---->size=207
+02-17 17:49:44.726: D/PlayVideoActivity(9539): hoperun--initData------>mUri = null
+02-17 17:49:44.726: D/DBTool(9539): hoperun--query------>tableName= LastChannelTypeInfo
+02-17 17:49:44.730: D/PlayVideoActivity(9539): hoperun--initData---->channelId=13
+02-17 17:49:44.742: D/DBTool(9539): hoperun--query------>tableName= channel
+02-17 17:49:44.750: D/ChannelDataOperate(9539): hoperun--getInfoByCursor----->isLaunch=false count = 1 isJoinTable=false
+02-17 17:49:44.750: D/PlayVideoActivity(9539): hoperun--loadVideo--->isReload = false,isNeedInit=true,curInfo.id=13
+02-17 17:49:44.753: D/PlayVideoActivity(9539): hoperun--loadVideo--->urlListIndex=0 urlListSize=3 curInfo.playUrl=http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctv13&type=ipad,http://biz.vsdn.tv380.com/playlive.php?5B63686E5D445830303030303038307C333234377C317C313030307C6C6235302E636E7C687474707C74735B2F63686E5DVSDNSOOONERCOM00,http://liveipad.wasu.cn/zyxw_ipad/z.m3u8
+02-17 17:49:44.757: D/PlayVideoActivity(9539): hoperun--handleMessage---->REFRESH_CHANNEL_ID
+02-17 17:49:44.757: D/PlayVideoActivity(9539): hoperun--curInfo===ChannelInfo [id=13, name=CCTV-13, typeId=1, index=, isCollect=false, iconUrl=http://feiying.hoperun.com:8081/hoperun/icon/CCTV-xinwen.png, playUrl=http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctv13&type=ipad,http://biz.vsdn.tv380.com/playlive.php?5B63686E5D445830303030303038307C333234377C317C313030307C6C6235302E636E7C687474707C74735B2F63686E5DVSDNSOOONERCOM00,http://liveipad.wasu.cn/zyxw_ipad/z.m3u8]
+02-17 17:49:44.757: D/HttpUtil(9539): checkNetWork------->connectivityManager != null
+02-17 17:49:44.761: D/HttpUtil(9539): checkNetWork------->networkInfos != null
+02-17 17:49:44.761: D/HttpUtil(9539): checkNetWork------->return true
+02-17 17:49:44.804: I/InputReader(335): Reconfiguring input devices.  changes=0x00000004
+02-17 17:49:44.804: I/InputReader(335): Device reconfigured: id=9, name='mxt224_ts_input', surface size is now 480x800, mode is 1
+02-17 17:49:44.839: I/ActivityManager(335): Config changed: {1.0 460mcc1mnc zh_CN sw320dp w533dp h294dp nrml long land finger -keyb/v/h -nav/h s.55 themeResource=null}
+02-17 17:49:45.046: D/PlayVideoActivity(9539): hoperun--handleMessage---->LOAD_CHANNEL_DATA
+02-17 17:49:45.046: D/PlayVideoActivity(9539): hoperun--getListPosition--------->i===========12
+02-17 17:49:45.046: D/DBTool(9539): hoperun--queryBySql-->sql=select iscollect from collect where channel_name='CCTV-13'
+02-17 17:49:45.050: D/DBTool(9539): hoperun--query------>tableName= channel
+02-17 17:49:45.062: D/ChannelDataOperate(9539): hoperun--queryChannelIcon-->columnIndex--->0
+02-17 17:49:45.062: D/PlayVideoActivity(9539): hoperun--refreshChannelInfo--->  icon in db 
+02-17 17:49:45.070: D/ProgramUtil(9539): getProgramById---->cId13
+02-17 17:49:45.082: D/PlayVideoActivity(9539): hoperun--onConfigurationChanged---->
+02-17 17:49:45.082: D/PlayVideoActivity(9539): hoperun--showWaitProgress-----------------------
+02-17 17:49:45.089: D/HttpUtil(9539): checkNetWork------->connectivityManager != null
+02-17 17:49:45.097: D/HttpUtil(9539): checkNetWork------->networkInfos != null
+02-17 17:49:45.101: D/HttpUtil(9539): checkNetWork------->return true
+02-17 17:49:45.140: D/ProgramUtil(9539): getServerTime sucess: serverDate = 2013-02-17, serverTime = 17:51
+02-17 17:49:45.164: D/ProgramUtil(9539): tempTime = 17:51, curMinute = 1071
+02-17 17:49:45.175: D/SizeAdaptiveLayout(542): com.android.internal.widget.SizeAdaptiveLayout@40dae1f8child view android.widget.FrameLayout@4119cad0 measured out of bounds at 95px clamped to 96px
+02-17 17:49:45.179: D/ProgramUtil(9539): calcProgress----------->result=97
+02-17 17:49:45.187: D/PlayVideoActivity(9539): hoperun--getProgramSucess----------->
+02-17 17:49:45.187: D/SizeAdaptiveLayout(542): com.android.internal.widget.SizeAdaptiveLayout@4133f818child view android.widget.LinearLayout@40f25c48 measured out of bounds at 95px clamped to 96px
+02-17 17:49:45.195: D/SizeAdaptiveLayout(542): com.android.internal.widget.SizeAdaptiveLayout@40de7ac8child view android.widget.FrameLayout@40f370e8 measured out of bounds at 95px clamped to 96px
+02-17 17:49:45.312: D/VideoView(9539): hoperun--surfaceChanged------------>
+02-17 17:49:45.410: D/PlayVideoActivity(9539): hoperun--handleMessage---->REFRESH_SUCESS_PROGRAM
+02-17 17:49:45.582: D/PlayVideoActivity(9539): hoperun--handleMessage---->SET_VIDEO_PATH=http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctv13&type=ipad
+02-17 17:49:45.582: I/hlsjni(9539): hls start preparing ===> http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctv13&type=ipad
+02-17 17:49:45.585: I/hlsjni(9539): Playback ===> [http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctv13&type=ipad]
+02-17 17:49:45.585: I/hlsjni(9539): hls create a new thread...
+02-17 17:49:45.585: I/hlsjni(9539): get into hls_live_thread
+02-17 17:49:45.589: I/hlsjni(9539): get into [hls_live_play] thread
+02-17 17:49:45.589: D/hlsjni(9539): ======>pointer [hls_ctx] = 0x2a143aa8
+02-17 17:49:45.589: D/hlsjni(9539): packet_queue_init
+02-17 17:49:45.734: D/hlsjni(9539): redirect_url >>> http://sw.live.cntv.cn/cctv_p2p_hdcctv13.m3u8
+02-17 17:49:45.734: D/hlsjni(9539): new url >>> http://sw.live.cntv.cn/cctv_p2p_hdcctv13.m3u8
+02-17 17:49:45.886: D/hlsjni(9539): redirect_url >>> http://202.108.17.170:80/3639a0TybaH5AJJJJJJ6na-6CV6a-8a-6JJJa-LcRip6ip6LJ55tLpcJJRi88tcSF5DFHHHDogtH0JJa0aoTybaHa0m7m4aH8nJa-8CnJRa-Ja-ba-Ra-6JJJa-Ja0aom7m4aHa094laH8J2VL2L26iapiJiJa-LLJ28i828ni28VJapiJiJa-iJiJa0ao94laHa0qKNaHru4r79ap6Ra-GTGqapL8i2L28Rc28C8apiJa-mIzm4apyIIma-GIapIGa-Tyap6CV6a-I3ap8Rn88RVViia-u9apic8Ca-WqapLLJ28i828J28ca-rTapJa0aoqKNaHa0fG4uaHSF5DDxa5LJL888J6cJRna-LJL288826c2Rna0aofG4uaH/1.m3u8?sw_sigh=791c40f73e
+02-17 17:49:45.886: D/hlsjni(9539): new url >>> http://202.108.17.170:80/3639a0TybaH5AJJJJJJ6na-6CV6a-8a-6JJJa-LcRip6ip6LJ55tLpcJJRi88tcSF5DFHHHDogtH0JJa0aoTybaHa0m7m4aH8nJa-8CnJRa-Ja-ba-Ra-6JJJa-Ja0aom7m4aHa094laH8J2VL2L26iapiJiJa-LLJ28i828ni28VJapiJiJa-iJiJa0ao94laHa0qKNaHru4r79ap6Ra-GTGqapL8i2L28Rc28C8apiJa-mIzm4apyIIma-GIapIGa-Tyap6CV6a-I3ap8Rn88RVViia-u9apic8Ca-WqapLLJ28i828J28ca-rTapJa0aoqKNaHa0fG4uaHSF5DDxa5LJL888J6cJRna-LJL288826c2Rna0aofG4uaH/1.m3u8?sw_sigh=791c40f73e
+02-17 17:49:45.976: D/hlsjni(9539): first step...
+02-17 17:49:45.976: D/hlsjni(9539): http://202.108.17.170:80/3639a0TybaH5AJJJJJJ6na-6CV6a-8a-6JJJa-LcRip6ip6LJ55tLpcJJRi88tcSF5DFHHHDogtH0JJa0aoTybaHa0m7m4aH8nJa-8CnJRa-Ja-ba-Ra-6JJJa-Ja0aom7m4aHa094laH8J2VL2L26iapiJiJa-LLJ28i828ni28VJapiJiJa-iJiJa0ao94laHa0qKNaHru4r79ap6Ra-GTGqapL8i2L28Rc28C8apiJa-mIzm4apyIIma-GIapIGa-Tyap6CV6a-I3ap8Rn88RVViia-u9apic8Ca-WqapLLJ28i828J28ca-rTapJa0aoqKNaHa0fG4uaHSF5DDxa5LJL888J6cJRna-LJL288826c2Rna0aofG4uaH/1.m3u8?sw_sigh=791c40f73e
+02-17 17:49:46.062: D/hlsjni(9539): >>>no variants, but segment is here, so create variant first	-- 1
+02-17 17:49:46.062: D/hlsjni(9539): second step...
+02-17 17:49:46.148: D/hlsjni(9539): http://202.108.17.170:80/3639a0TybaH5AJJJJJJ6na-6CV6a-8a-6JJJa-LcRip6ip6LJ55tLpcJJRi88tcSF5DFHHHDogtH0JJa0aoTybaHa0m7m4aH8nJa-8CnJRa-Ja-ba-Ra-6JJJa-Ja0aom7m4aHa094laH8J2VL2L26iapiJiJa-LLJ28i828ni28VJapiJiJa-iJiJa0ao94laHa0qKNaHru4r79ap6Ra-GTGqapL8i2L28Rc28C8apiJa-mIzm4apyIIma-GIapIGa-Tyap6CV6a-I3ap8Rn88RVViia-u9apic8Ca-WqapLLJ28i828J28ca-rTapJa0aoqKNaHa0fG4uaHSF5DDxa5LJL888J6cJRna-LJL288826c2Rna0aofG4uaH/1.m3u8?sw_sigh=791c40f73e
+02-17 17:49:46.246: D/hlsjni(9539): packet_queue_init
+02-17 17:49:46.246: I/hlsjni(9539): hls create a new thread...
+02-17 17:49:46.246: D/hlsjni(9539): after first playlist : cur_seq_no = 7005296
+02-17 17:49:46.250: D/hlsjni(9539): get into playlist reloading loop...
+02-17 17:49:46.253: D/hlsjni(9539): hls download thread are working now...
+02-17 17:49:46.562: D/hlsjni(9539): segments[0].id => 7005293 <-> cur_seq_no => 7005296 <-> n_segments => 3
+02-17 17:49:46.902: I/hlsjni(9539): hls proxy buffing down, notice MediaPlayer start playing...
+02-17 17:49:46.902: I/hlsjni(9539): >>>>>>>>>>>>>>>>>>>[stop the previous channel thread]
+02-17 17:49:46.906: I/hlsjni(9539): get into hls_event_callback method
+02-17 17:49:46.906: I/hlsjni(9539): hls_event_callback: failed to get JNI environment, assuming native thread
+02-17 17:49:46.910: D/EventManager(9539): callback----->event = 260  mEventHandler.size()=1
+02-17 17:49:46.910: D/EventManager(9539): callback----->for   i= 0
+02-17 17:49:46.914: D/PlayVideoActivity(9539): hoperun--VideoPlayerEventHandler---->eventHandler=260
+02-17 17:49:46.918: D/PlayVideoActivity(9539): hoperun--eventHandler------>MediaPlayerPlaying
+02-17 17:49:46.918: D/PlayVideoActivity(9539): pathUri=http://localhost:8080/livetv.ts
+02-17 17:49:46.933: V/VideoView(9539): reset duration to -1 in openVideo
+02-17 17:49:46.933: I/hlsjni(9539): get out of hls_event_callback method
+02-17 17:49:46.937: D/MediaPlayer(9539): Couldn't open file on client side, trying server side
+02-17 17:49:46.937: D/hlsjni(9539): put ts data to queue...407208
+02-17 17:49:46.957: I/AwesomePlayer(142): setDataSource_l('http://localhost:8080/livetv.ts')
+02-17 17:49:46.960: V/ChromiumHTTPDataSource(142): connect on behalf of uid 10048
+02-17 17:49:46.960: I/ChromiumHTTPDataSource(142): connect to http://localhost:8080/livetv.ts @0
+02-17 17:49:46.972: D/hlsjni(9539): mongoose callback to proxy_live
+02-17 17:49:46.972: D/hlsjni(9539): mongoose callback to proxy_live
+02-17 17:49:46.972: D/hlsjni(9539): mongoose callback to proxy_live
+02-17 17:49:46.972: D/hlsjni(9539): mongoose callback to proxy_live
+02-17 17:49:46.972: I/hlsjni(9539): mongoose proxy get queue from hls
+02-17 17:49:46.972: D/hlsjni(9539): mongoose callback to proxy_live
+02-17 17:49:46.972: D/hlsjni(9539): offset = 0, len = 4398046511104
+02-17 17:49:46.972: I/hlsjni(9539): -------------------------------------->>>send live data to MediaPlayer
+02-17 17:49:46.972: D/hlsjni(9539): ======>pointer [hls_ctx] = 0x2a143aa8
+02-17 17:49:46.972: D/hlsjni(9539): ready to send TV data to Android MediaPlayer...
+02-17 17:49:46.972: D/hlsjni(9539): pop ts data from queue... 407208
+02-17 17:49:47.269: W/WVMExtractor(142): Failed to open libwvm.so
+02-17 17:49:47.472: I/ESQueue(142): found AAC codec config (44100 Hz, 2 channels)
+02-17 17:49:47.476: I/avc_utils(142): found AVC codec config (720 x 576, High-profile level 3.0)
+02-17 17:49:47.500: I/MPEG2TSExtractor(142): haveAudio=1, haveVideo=1
+02-17 17:49:47.503: I/OMXCodec(142): [OMX.SEC.AVC.Decoder] AVC profile = 100 (High), level = 30
+02-17 17:49:47.503: I/OMXCodec(142): [OMX.SEC.AVC.Decoder] video dimensions are 720 x 576
+02-17 17:49:47.656: D/dalvikvm(335): GC_EXPLICIT freed 1454K, 51% free 13815K/27719K, paused 101ms+15ms, total 243ms
+02-17 17:49:47.835: D/hlsjni(9539): put ts data to queue...946956
+02-17 17:49:47.835: D/hlsjni(9539): pop ts data from queue... 946956
+02-17 17:49:48.386: D/hlsjni(9539): put ts data to queue...313396
+02-17 17:49:48.386: D/hlsjni(9539): pop ts data from queue... 313396
+02-17 17:49:48.585: D/PlayVideoActivity(9539): hoperun--onPreparedListener---->mp.weigth=720 mp.height = 576
+02-17 17:49:48.585: D/VideoView(9539): hoperun------in the invoke-------mMediaPlayer:
+02-17 17:49:48.589: E/Parcel(142): Reading a NULL string not supported here.
+02-17 17:49:48.589: E/Parcel(142): Reading a NULL string not supported here.
+02-17 17:49:48.589: E/TimedTextDriver(142): uri('') is not a file
+02-17 17:49:48.593: W/System.err(9539): java.lang.reflect.InvocationTargetException
+02-17 17:49:48.597: W/System.err(9539): 	at java.lang.reflect.Method.invokeNative(Native Method)
+02-17 17:49:48.597: W/System.err(9539): 	at java.lang.reflect.Method.invoke(Method.java:511)
+02-17 17:49:48.597: W/System.err(9539): 	at com.hoperun.live.widget.VideoView.invoke(VideoView.java:154)
+02-17 17:49:48.597: W/System.err(9539): 	at com.hoperun.live.activity.PlayVideoActivity.setVideoScale(PlayVideoActivity.java:2463)
+02-17 17:49:48.601: W/System.err(9539): 	at com.hoperun.live.activity.PlayVideoActivity.access$41(PlayVideoActivity.java:2449)
+02-17 17:49:48.601: W/System.err(9539): 	at com.hoperun.live.activity.PlayVideoActivity$3.onPrepared(PlayVideoActivity.java:2240)
+02-17 17:49:48.601: W/System.err(9539): 	at com.hoperun.live.widget.VideoView$2.onPrepared(VideoView.java:350)
+02-17 17:49:48.605: W/System.err(9539): 	at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:1975)
+02-17 17:49:48.605: W/System.err(9539): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+02-17 17:49:48.605: W/System.err(9539): 	at android.os.Looper.loop(Looper.java:137)
+02-17 17:49:48.609: W/System.err(9539): 	at android.app.ActivityThread.main(ActivityThread.java:4931)
+02-17 17:49:48.609: W/System.err(9539): 	at java.lang.reflect.Method.invokeNative(Native Method)
+02-17 17:49:48.613: W/System.err(9539): 	at java.lang.reflect.Method.invoke(Method.java:511)
+02-17 17:49:48.613: W/System.err(9539): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+02-17 17:49:48.617: W/System.err(9539): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:558)
+02-17 17:49:48.617: W/System.err(9539): 	at dalvik.system.NativeStart.main(Native Method)
+02-17 17:49:48.617: W/System.err(9539): Caused by: java.lang.RuntimeException: failure code: -1010
+02-17 17:49:48.621: W/System.err(9539): 	at android.media.MediaPlayer.invoke(MediaPlayer.java:644)
+02-17 17:49:48.621: W/System.err(9539): 	... 16 more
+02-17 17:49:48.621: D/VideoView(9539): hoperun--start----------mMediaPlayer  is true  mIsPrepared=true
+02-17 17:49:48.625: D/PlayVideoActivity(9539): hoperun--mediaPlayerPrepared------>isReload=false
+02-17 17:49:48.625: D/PlayVideoActivity(9539): hoperun--dismissWaitProgress-----------------------
+02-17 17:49:48.628: D/PlayVideoActivity(9539): hoperun--updateLaseChannelTypeInfo--->lastUrihttp://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctv13&type=ipad,http://biz.vsdn.tv380.com/playlive.php?5B63686E5D445830303030303038307C333234377C317C313030307C6C6235302E636E7C687474707C74735B2F63686E5DVSDNSOOONERCOM00,http://liveipad.wasu.cn/zyxw_ipad/z.m3u8
+02-17 17:49:48.628: D/ChannelDataOperate(9539): hoperun--==checkChannelType=
+02-17 17:49:48.628: D/DBTool(9539): hoperun--query------>tableName= channel
+02-17 17:49:48.632: D/PlayVideoActivity(9539): hoperun--updateLaseChannelTypeInfo--->channelid13 typeId =1
+02-17 17:49:48.648: D/DBTool(9539): hoperun--updateRecord---->update last channel type ,rowID= 1
+02-17 17:49:48.656: D/DBTool(9539): hoperun--updateRecord---->update last channel type ,rowID= 1
+02-17 17:49:48.656: D/PlayVideoActivity(9539): hoperun--showBottomLayout--------------->
+02-17 17:49:48.683: D/VideoView(9539): hoperun--surfaceChanged------------>
+02-17 17:49:48.964: E/(142): SsbSipMfcDecExe: IOCTL_MFC_DEC_EXE failed(ret : -2005)
+02-17 17:49:48.980: I/SoftAAC2(142): Reconfiguring decoder: 44100 Hz, 2 channels
+02-17 17:49:49.007: D/AudioHardware(142): AudioHardware pcm playback is exiting standby.
+02-17 17:49:49.007: V/AudioHardware(142): open pcm_out driver
+02-17 17:49:49.007: D/AudioHardware(142): openPcmOut_l() mPcmOpenCnt: 0
+02-17 17:49:49.015: D/PlayVideoActivity(9539): hoperun--handleMessage---->FADE_MZ_OUT
+02-17 17:49:49.070: V/AudioHardware(142): openMixer_l() mMixerOpenCnt: 0
+02-17 17:49:49.070: V/AudioHardware(142): open playback normal
+02-17 17:49:49.070: V/AudioHardware(142): write() wakeup setting route SPK
+02-17 17:49:49.761: D/PlayVideoActivity(9539): hoperun--handleMessage---->FADE_ID_OUT
+02-17 17:49:51.414: D/hlsjni(9539): segments[0].id => 7005294 <-> cur_seq_no => 7005296 <-> n_segments => 3
+02-17 17:49:52.082: D/hlsjni(9539): put ts data to queue...547832
+02-17 17:49:52.082: D/hlsjni(9539): pop ts data from queue... 547832
+02-17 17:49:53.660: D/PlayVideoActivity(9539): hoperun--handleMessage---->FADE_BOTTOM_OUT
+02-17 17:49:53.660: D/PlayVideoActivity(9539): hoperun--hideBottomLayout--------------->
+02-17 17:49:56.437: D/hlsjni(9539): segments[0].id => 7005294 <-> cur_seq_no => 7005297 <-> n_segments => 3
+02-17 17:50:00.175: W/ThrottleService(335): unable to find stats for iface pdp0
+02-17 17:50:01.421: D/hlsjni(9539): segments[0].id => 7005294 <-> cur_seq_no => 7005297 <-> n_segments => 3
+02-17 17:50:11.464: D/hlsjni(9539): segments[0].id => 7005296 <-> cur_seq_no => 7005297 <-> n_segments => 3
+02-17 17:50:12.449: D/hlsjni(9539): put ts data to queue...1092468
+02-17 17:50:12.449: D/hlsjni(9539): pop ts data from queue... 1092468
+02-17 17:50:13.136: D/hlsjni(9539): put ts data to queue...558360
+02-17 17:50:13.136: D/hlsjni(9539): pop ts data from queue... 558360
+02-17 17:50:16.421: D/hlsjni(9539): segments[0].id => 7005296 <-> cur_seq_no => 7005299 <-> n_segments => 3
+02-17 17:50:21.421: D/hlsjni(9539): segments[0].id => 7005296 <-> cur_seq_no => 7005299 <-> n_segments => 3
+02-17 17:50:28.101: I/AwesomePlayer(142): we're much too late (4.09 secs), video skipping ahead
+02-17 17:50:28.128: I/AwesomePlayer(142): XXX mSeekTimeUs = 34992466 us, timeUs = 31098777 us
+02-17 17:50:28.128: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.76 secs
+02-17 17:50:28.156: I/AwesomePlayer(142): we're much too late (3.74 secs), video skipping ahead
+02-17 17:50:28.175: I/AwesomePlayer(142): XXX mSeekTimeUs = 35038911 us, timeUs = 31498777 us
+02-17 17:50:28.175: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.40 secs
+02-17 17:50:28.191: I/AwesomePlayer(142): we're much too late (8825501086280.27 secs), video skipping ahead
+02-17 17:50:28.222: I/AwesomePlayer(142): XXX mSeekTimeUs = 35085344 us, timeUs = 31858777 us
+02-17 17:50:28.222: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.09 secs
+02-17 17:50:28.246: I/AwesomePlayer(142): we're much too late (3.07 secs), video skipping ahead
+02-17 17:50:28.273: I/AwesomePlayer(142): XXX mSeekTimeUs = 35131788 us, timeUs = 32258777 us
+02-17 17:50:28.273: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.74 secs
+02-17 17:50:28.304: I/AwesomePlayer(142): we're much too late (2.72 secs), video skipping ahead
+02-17 17:50:28.328: I/AwesomePlayer(142): XXX mSeekTimeUs = 35178233 us, timeUs = 32658777 us
+02-17 17:50:28.328: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.39 secs
+02-17 17:50:28.355: I/AwesomePlayer(142): we're much too late (2.38 secs), video skipping ahead
+02-17 17:50:28.382: I/AwesomePlayer(142): XXX mSeekTimeUs = 35247888 us, timeUs = 33058777 us
+02-17 17:50:28.382: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.05 secs
+02-17 17:50:28.406: I/AwesomePlayer(142): we're much too late (2.03 secs), video skipping ahead
+02-17 17:50:28.437: I/AwesomePlayer(142): XXX mSeekTimeUs = 35294322 us, timeUs = 33458777 us
+02-17 17:50:28.437: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.70 secs
+02-17 17:50:28.460: I/AwesomePlayer(142): we're much too late (1.69 secs), video skipping ahead
+02-17 17:50:28.488: I/AwesomePlayer(142): XXX mSeekTimeUs = 35340766 us, timeUs = 33858777 us
+02-17 17:50:28.488: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.35 secs
+02-17 17:50:28.519: I/AwesomePlayer(142): we're much too late (1.34 secs), video skipping ahead
+02-17 17:50:28.535: I/AwesomePlayer(142): XXX mSeekTimeUs = 35387211 us, timeUs = 34258777 us
+02-17 17:50:28.535: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.00 secs
+02-17 17:50:28.554: I/AwesomePlayer(142): we're much too late (8825501086280.63 secs), video skipping ahead
+02-17 17:50:28.585: I/AwesomePlayer(142): XXX mSeekTimeUs = 35433644 us, timeUs = 34618777 us
+02-17 17:50:28.585: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.69 secs
+02-17 17:50:28.605: I/AwesomePlayer(142): we're much too late (0.67 secs), video skipping ahead
+02-17 17:50:28.632: I/AwesomePlayer(142): XXX mSeekTimeUs = 35480088 us, timeUs = 35018777 us
+02-17 17:50:28.632: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.34 secs
+02-17 17:50:28.660: D/VideoView(9539): hoperun--OnInfoListener----> what=700  extra=467 mp.height=576 mp.width=720
+02-17 17:50:30.433: I/AwesomePlayer(142): we're much too late (1.10 secs), video skipping ahead
+02-17 17:50:30.464: I/AwesomePlayer(142): XXX mSeekTimeUs = 36153466 us, timeUs = 35218777 us
+02-17 17:50:30.464: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.81 secs
+02-17 17:50:30.488: I/AwesomePlayer(142): we're much too late (0.79 secs), video skipping ahead
+02-17 17:50:30.515: I/AwesomePlayer(142): XXX mSeekTimeUs = 36223122 us, timeUs = 35618777 us
+02-17 17:50:30.515: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.46 secs
+02-17 17:50:30.660: D/VideoView(9539): hoperun--OnInfoListener----> what=700  extra=326 mp.height=576 mp.width=720
+02-17 17:50:31.468: D/hlsjni(9539): segments[0].id => 7005297 <-> cur_seq_no => 7005299 <-> n_segments => 3
+02-17 17:50:32.070: D/hlsjni(9539): put ts data to queue...576408
+02-17 17:50:32.070: D/hlsjni(9539): pop ts data from queue... 576408
+02-17 17:50:36.429: D/hlsjni(9539): segments[0].id => 7005298 <-> cur_seq_no => 7005300 <-> n_segments => 3
+02-17 17:50:37.593: D/hlsjni(9539): put ts data to queue...866492
+02-17 17:50:37.593: D/hlsjni(9539): pop ts data from queue... 866492
+02-17 17:50:41.421: D/hlsjni(9539): segments[0].id => 7005299 <-> cur_seq_no => 7005301 <-> n_segments => 3
+02-17 17:50:42.031: D/hlsjni(9539): put ts data to queue...398372
+02-17 17:50:42.031: D/hlsjni(9539): pop ts data from queue... 398372
+02-17 17:50:46.492: D/hlsjni(9539): segments[0].id => 7005299 <-> cur_seq_no => 7005302 <-> n_segments => 3
+02-17 17:50:51.421: D/hlsjni(9539): segments[0].id => 7005300 <-> cur_seq_no => 7005302 <-> n_segments => 3
+02-17 17:50:52.160: D/hlsjni(9539): put ts data to queue...686388
+02-17 17:50:52.160: D/hlsjni(9539): pop ts data from queue... 686388
+02-17 17:50:56.449: D/hlsjni(9539): segments[0].id => 7005300 <-> cur_seq_no => 7005303 <-> n_segments => 3
+02-17 17:51:01.425: D/hlsjni(9539): segments[0].id => 7005300 <-> cur_seq_no => 7005303 <-> n_segments => 3
+02-17 17:51:11.496: D/hlsjni(9539): segments[0].id => 7005302 <-> cur_seq_no => 7005303 <-> n_segments => 3
+02-17 17:51:12.179: D/hlsjni(9539): put ts data to queue...737524
+02-17 17:51:12.179: D/hlsjni(9539): pop ts data from queue... 737524
+02-17 17:51:12.976: D/hlsjni(9539): put ts data to queue...879840
+02-17 17:51:12.976: D/hlsjni(9539): pop ts data from queue... 879840
+02-17 17:51:16.429: D/hlsjni(9539): segments[0].id => 7005302 <-> cur_seq_no => 7005305 <-> n_segments => 3
+02-17 17:51:21.410: D/hlsjni(9539): segments[0].id => 7005302 <-> cur_seq_no => 7005305 <-> n_segments => 3
+02-17 17:51:31.429: D/hlsjni(9539): segments[0].id => 7005303 <-> cur_seq_no => 7005305 <-> n_segments => 3
+02-17 17:51:31.949: D/hlsjni(9539): put ts data to queue...384272
+02-17 17:51:31.953: D/hlsjni(9539): pop ts data from queue... 384272
+02-17 17:51:36.414: D/hlsjni(9539): segments[0].id => 7005304 <-> cur_seq_no => 7005306 <-> n_segments => 3
+02-17 17:51:37.007: D/hlsjni(9539): put ts data to queue...563248
+02-17 17:51:37.007: D/hlsjni(9539): pop ts data from queue... 563248
+02-17 17:51:38.929: I/AwesomePlayer(142): we're much too late (3.94 secs), video skipping ahead
+02-17 17:51:38.957: I/AwesomePlayer(142): XXX mSeekTimeUs = 100681722 us, timeUs = 96938777 us
+02-17 17:51:38.957: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.61 secs
+02-17 17:51:38.984: I/AwesomePlayer(142): we're much too late (3.59 secs), video skipping ahead
+02-17 17:51:39.011: I/AwesomePlayer(142): XXX mSeekTimeUs = 100728155 us, timeUs = 97338777 us
+02-17 17:51:39.011: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.26 secs
+02-17 17:51:39.035: I/AwesomePlayer(142): we're much too late (3.25 secs), video skipping ahead
+02-17 17:51:39.058: I/AwesomePlayer(142): XXX mSeekTimeUs = 100774600 us, timeUs = 97738777 us
+02-17 17:51:39.058: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.91 secs
+02-17 17:51:39.070: I/AwesomePlayer(142): we're much too late (8825501086346.02 secs), video skipping ahead
+02-17 17:51:39.101: I/AwesomePlayer(142): XXX mSeekTimeUs = 100821044 us, timeUs = 98098777 us
+02-17 17:51:39.101: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.59 secs
+02-17 17:51:39.125: I/AwesomePlayer(142): we're much too late (2.58 secs), video skipping ahead
+02-17 17:51:39.156: I/AwesomePlayer(142): XXX mSeekTimeUs = 100867477 us, timeUs = 98498777 us
+02-17 17:51:39.156: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.25 secs
+02-17 17:51:39.179: I/AwesomePlayer(142): we're much too late (2.23 secs), video skipping ahead
+02-17 17:51:39.207: I/AwesomePlayer(142): XXX mSeekTimeUs = 100913922 us, timeUs = 98898777 us
+02-17 17:51:39.207: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.90 secs
+02-17 17:51:39.234: I/AwesomePlayer(142): we're much too late (1.89 secs), video skipping ahead
+02-17 17:51:39.261: I/AwesomePlayer(142): XXX mSeekTimeUs = 100983577 us, timeUs = 99298777 us
+02-17 17:51:39.261: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.55 secs
+02-17 17:51:39.285: I/AwesomePlayer(142): we're much too late (1.54 secs), video skipping ahead
+02-17 17:51:39.316: I/AwesomePlayer(142): XXX mSeekTimeUs = 101030022 us, timeUs = 99698777 us
+02-17 17:51:39.316: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.21 secs
+02-17 17:51:39.339: I/AwesomePlayer(142): we're much too late (1.19 secs), video skipping ahead
+02-17 17:51:39.375: I/AwesomePlayer(142): XXX mSeekTimeUs = 101076455 us, timeUs = 100098777 us
+02-17 17:51:39.375: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.87 secs
+02-17 17:51:39.394: I/AwesomePlayer(142): we're much too late (0.85 secs), video skipping ahead
+02-17 17:51:39.421: I/AwesomePlayer(142): XXX mSeekTimeUs = 101146122 us, timeUs = 100498777 us
+02-17 17:51:39.421: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.51 secs
+02-17 17:51:39.449: I/AwesomePlayer(142): we're much too late (0.50 secs), video skipping ahead
+02-17 17:51:39.476: I/AwesomePlayer(142): XXX mSeekTimeUs = 101215777 us, timeUs = 100898777 us
+02-17 17:51:39.476: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.17 secs
+02-17 17:51:41.414: D/hlsjni(9539): segments[0].id => 7005304 <-> cur_seq_no => 7005307 <-> n_segments => 3
+02-17 17:51:46.578: D/hlsjni(9539): segments[0].id => 7005304 <-> cur_seq_no => 7005307 <-> n_segments => 3
+02-17 17:51:56.453: D/hlsjni(9539): segments[0].id => 7005307 <-> cur_seq_no => 7005307 <-> n_segments => 2
+02-17 17:51:56.949: D/hlsjni(9539): put ts data to queue...317532
+02-17 17:51:56.949: D/hlsjni(9539): pop ts data from queue... 317532
+02-17 17:51:57.628: D/hlsjni(9539): put ts data to queue...498388
+02-17 17:51:57.628: D/hlsjni(9539): pop ts data from queue... 498388
+02-17 17:52:01.414: D/hlsjni(9539): segments[0].id => 7005307 <-> cur_seq_no => 7005309 <-> n_segments => 3
+02-17 17:52:02.160: D/hlsjni(9539): put ts data to queue...783208
+02-17 17:52:02.160: D/hlsjni(9539): pop ts data from queue... 783208
+02-17 17:52:06.414: D/hlsjni(9539): segments[0].id => 7005307 <-> cur_seq_no => 7005310 <-> n_segments => 3
+02-17 17:52:11.449: D/hlsjni(9539): segments[0].id => 7005308 <-> cur_seq_no => 7005310 <-> n_segments => 3
+02-17 17:52:12.117: D/hlsjni(9539): put ts data to queue...670596
+02-17 17:52:12.117: D/hlsjni(9539): pop ts data from queue... 670596
+02-17 17:52:16.609: D/hlsjni(9539): segments[0].id => 7005308 <-> cur_seq_no => 7005311 <-> n_segments => 3
+02-17 17:52:19.988: I/AwesomePlayer(142): we're much too late (3.96 secs), video skipping ahead
+02-17 17:52:20.046: I/AwesomePlayer(142): we're much too late (8825501086390.75 secs), video skipping ahead
+02-17 17:52:21.414: D/hlsjni(9539): segments[0].id => 7005308 <-> cur_seq_no => 7005311 <-> n_segments => 3
+02-17 17:52:31.457: D/hlsjni(9539): segments[0].id => 7005310 <-> cur_seq_no => 7005311 <-> n_segments => 3
+02-17 17:52:32.035: D/hlsjni(9539): put ts data to queue...538808
+02-17 17:52:32.035: D/hlsjni(9539): pop ts data from queue... 538808
+02-17 17:52:32.796: D/hlsjni(9539): put ts data to queue...796556
+02-17 17:52:32.796: D/hlsjni(9539): pop ts data from queue... 796556
+02-17 17:52:36.414: D/hlsjni(9539): segments[0].id => 7005310 <-> cur_seq_no => 7005313 <-> n_segments => 3
+02-17 17:52:36.878: I/AwesomePlayer(142): we're much too late (4.82 secs), video skipping ahead
+02-17 17:52:36.914: I/AwesomePlayer(142): XXX mSeekTimeUs = 157524166 us, timeUs = 152858777 us
+02-17 17:52:36.914: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 4.53 secs
+02-17 17:52:36.933: I/AwesomePlayer(142): we're much too late (4.51 secs), video skipping ahead
+02-17 17:52:36.960: I/AwesomePlayer(142): XXX mSeekTimeUs = 157570611 us, timeUs = 153258777 us
+02-17 17:52:36.960: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 4.18 secs
+02-17 17:52:36.988: I/AwesomePlayer(142): we're much too late (4.16 secs), video skipping ahead
+02-17 17:52:37.007: I/AwesomePlayer(142): XXX mSeekTimeUs = 157617044 us, timeUs = 153658777 us
+02-17 17:52:37.007: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.83 secs
+02-17 17:52:37.027: I/AwesomePlayer(142): we're much too late (8825501086402.86 secs), video skipping ahead
+02-17 17:52:37.054: I/AwesomePlayer(142): XXX mSeekTimeUs = 157663488 us, timeUs = 154018777 us
+02-17 17:52:37.054: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.51 secs
+02-17 17:52:37.078: I/AwesomePlayer(142): we're much too late (3.49 secs), video skipping ahead
+02-17 17:52:37.105: I/AwesomePlayer(142): XXX mSeekTimeUs = 157709933 us, timeUs = 154418777 us
+02-17 17:52:37.105: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.16 secs
+02-17 17:52:37.132: I/AwesomePlayer(142): we're much too late (3.15 secs), video skipping ahead
+02-17 17:52:37.164: I/AwesomePlayer(142): XXX mSeekTimeUs = 157756366 us, timeUs = 154818777 us
+02-17 17:52:37.164: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.82 secs
+02-17 17:52:37.183: I/AwesomePlayer(142): we're much too late (2.80 secs), video skipping ahead
+02-17 17:52:37.210: I/AwesomePlayer(142): XXX mSeekTimeUs = 157826033 us, timeUs = 155218777 us
+02-17 17:52:37.214: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.47 secs
+02-17 17:52:37.242: I/AwesomePlayer(142): we're much too late (2.46 secs), video skipping ahead
+02-17 17:52:37.277: I/AwesomePlayer(142): XXX mSeekTimeUs = 157872466 us, timeUs = 155618777 us
+02-17 17:52:37.277: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.13 secs
+02-17 17:52:37.312: I/AwesomePlayer(142): we're much too late (2.13 secs), video skipping ahead
+02-17 17:52:37.339: I/AwesomePlayer(142): XXX mSeekTimeUs = 157942133 us, timeUs = 156018777 us
+02-17 17:52:37.339: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.80 secs
+02-17 17:52:37.363: I/AwesomePlayer(142): we're much too late (1.78 secs), video skipping ahead
+02-17 17:52:37.390: I/AwesomePlayer(142): XXX mSeekTimeUs = 157988566 us, timeUs = 156418777 us
+02-17 17:52:37.390: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.45 secs
+02-17 17:52:37.418: I/AwesomePlayer(142): we're much too late (1.44 secs), video skipping ahead
+02-17 17:52:37.449: I/AwesomePlayer(142): XXX mSeekTimeUs = 158035011 us, timeUs = 156818777 us
+02-17 17:52:37.449: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.11 secs
+02-17 17:52:37.472: I/AwesomePlayer(142): we're much too late (1.09 secs), video skipping ahead
+02-17 17:52:37.503: I/AwesomePlayer(142): XXX mSeekTimeUs = 158104666 us, timeUs = 157218777 us
+02-17 17:52:37.503: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.76 secs
+02-17 17:52:37.527: I/AwesomePlayer(142): we're much too late (0.75 secs), video skipping ahead
+02-17 17:52:37.550: I/AwesomePlayer(142): XXX mSeekTimeUs = 158151111 us, timeUs = 157618777 us
+02-17 17:52:37.550: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.41 secs
+02-17 17:52:37.582: I/AwesomePlayer(142): we're much too late (8825501086403.41 secs), video skipping ahead
+02-17 17:52:37.609: I/AwesomePlayer(142): XXX mSeekTimeUs = 158197544 us, timeUs = 157978777 us
+02-17 17:52:37.609: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.11 secs
+02-17 17:52:41.425: D/hlsjni(9539): segments[0].id => 7005311 <-> cur_seq_no => 7005313 <-> n_segments => 3
+02-17 17:52:42.062: D/hlsjni(9539): put ts data to queue...528092
+02-17 17:52:42.062: D/hlsjni(9539): pop ts data from queue... 528092
+02-17 17:52:46.437: D/hlsjni(9539): segments[0].id => 7005311 <-> cur_seq_no => 7005314 <-> n_segments => 3
+02-17 17:52:51.418: D/hlsjni(9539): segments[0].id => 7005312 <-> cur_seq_no => 7005314 <-> n_segments => 3
+02-17 17:52:52.195: D/hlsjni(9539): put ts data to queue...819116
+02-17 17:52:52.195: D/hlsjni(9539): pop ts data from queue... 819116
+02-17 17:52:56.433: D/hlsjni(9539): segments[0].id => 7005312 <-> cur_seq_no => 7005315 <-> n_segments => 3
+02-17 17:53:01.421: D/hlsjni(9539): segments[0].id => 7005312 <-> cur_seq_no => 7005315 <-> n_segments => 3
+02-17 17:53:11.453: D/hlsjni(9539): segments[0].id => 7005314 <-> cur_seq_no => 7005315 <-> n_segments => 3
+02-17 17:53:12.257: D/hlsjni(9539): put ts data to queue...696728
+02-17 17:53:12.257: D/hlsjni(9539): pop ts data from queue... 696728
+02-17 17:53:14.437: D/hlsjni(9539): put ts data to queue...636380
+02-17 17:53:14.437: D/hlsjni(9539): pop ts data from queue... 636380
+02-17 17:53:16.429: D/hlsjni(9539): segments[0].id => 7005314 <-> cur_seq_no => 7005317 <-> n_segments => 3
+02-17 17:53:21.421: D/hlsjni(9539): segments[0].id => 7005314 <-> cur_seq_no => 7005317 <-> n_segments => 3
+02-17 17:53:31.468: D/hlsjni(9539): segments[0].id => 7005316 <-> cur_seq_no => 7005317 <-> n_segments => 3
+02-17 17:53:32.109: D/hlsjni(9539): put ts data to queue...503088
+02-17 17:53:32.109: D/hlsjni(9539): pop ts data from queue... 503088
+02-17 17:53:34.484: D/hlsjni(9539): put ts data to queue...817424
+02-17 17:53:34.484: D/hlsjni(9539): pop ts data from queue... 817424
+02-17 17:53:36.429: D/hlsjni(9539): segments[0].id => 7005316 <-> cur_seq_no => 7005319 <-> n_segments => 3
+02-17 17:53:41.425: D/hlsjni(9539): segments[0].id => 7005316 <-> cur_seq_no => 7005319 <-> n_segments => 3
+02-17 17:53:45.859: I/AwesomePlayer(142): we're much too late (4.73 secs), video skipping ahead
+02-17 17:53:45.886: I/AwesomePlayer(142): XXX mSeekTimeUs = 221634466 us, timeUs = 217058777 us
+02-17 17:53:45.886: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 4.44 secs
+02-17 17:53:45.914: I/AwesomePlayer(142): we're much too late (4.43 secs), video skipping ahead
+02-17 17:53:45.945: I/AwesomePlayer(142): XXX mSeekTimeUs = 221680900 us, timeUs = 217458777 us
+02-17 17:53:45.945: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 4.10 secs
+02-17 17:53:45.968: I/AwesomePlayer(142): we're much too late (4.08 secs), video skipping ahead
+02-17 17:53:45.996: I/AwesomePlayer(142): XXX mSeekTimeUs = 221750566 us, timeUs = 217858777 us
+02-17 17:53:45.996: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.75 secs
+02-17 17:53:46.019: I/AwesomePlayer(142): we're much too late (3.73 secs), video skipping ahead
+02-17 17:53:46.050: I/AwesomePlayer(142): XXX mSeekTimeUs = 221797000 us, timeUs = 218258777 us
+02-17 17:53:46.050: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.40 secs
+02-17 17:53:46.074: I/AwesomePlayer(142): we're much too late (3.39 secs), video skipping ahead
+02-17 17:53:46.101: I/AwesomePlayer(142): XXX mSeekTimeUs = 221843444 us, timeUs = 218658777 us
+02-17 17:53:46.101: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 3.06 secs
+02-17 17:53:46.128: I/AwesomePlayer(142): we're much too late (3.04 secs), video skipping ahead
+02-17 17:53:46.160: I/AwesomePlayer(142): XXX mSeekTimeUs = 221889877 us, timeUs = 219058777 us
+02-17 17:53:46.160: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.71 secs
+02-17 17:53:46.183: I/AwesomePlayer(142): we're much too late (2.70 secs), video skipping ahead
+02-17 17:53:46.210: I/AwesomePlayer(142): XXX mSeekTimeUs = 221959544 us, timeUs = 219458777 us
+02-17 17:53:46.210: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.36 secs
+02-17 17:53:46.238: I/AwesomePlayer(142): we're much too late (2.35 secs), video skipping ahead
+02-17 17:53:46.265: I/AwesomePlayer(142): XXX mSeekTimeUs = 222005977 us, timeUs = 219858777 us
+02-17 17:53:46.265: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 2.02 secs
+02-17 17:53:46.289: I/AwesomePlayer(142): we're much too late (2.00 secs), video skipping ahead
+02-17 17:53:46.320: I/AwesomePlayer(142): XXX mSeekTimeUs = 222052422 us, timeUs = 220258777 us
+02-17 17:53:46.320: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.67 secs
+02-17 17:53:46.343: I/AwesomePlayer(142): we're much too late (1.66 secs), video skipping ahead
+02-17 17:53:46.375: I/AwesomePlayer(142): XXX mSeekTimeUs = 222098866 us, timeUs = 220658777 us
+02-17 17:53:46.378: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 1.33 secs
+02-17 17:53:46.398: I/AwesomePlayer(142): we're much too late (1.31 secs), video skipping ahead
+02-17 17:53:46.429: I/AwesomePlayer(142): XXX mSeekTimeUs = 222168522 us, timeUs = 221058777 us
+02-17 17:53:46.429: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.98 secs
+02-17 17:53:46.453: I/AwesomePlayer(142): we're much too late (0.96 secs), video skipping ahead
+02-17 17:53:46.480: I/AwesomePlayer(142): XXX mSeekTimeUs = 222214966 us, timeUs = 221458777 us
+02-17 17:53:46.480: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.63 secs
+02-17 17:53:46.507: I/AwesomePlayer(142): we're much too late (0.62 secs), video skipping ahead
+02-17 17:53:46.531: I/AwesomePlayer(142): XXX mSeekTimeUs = 222261400 us, timeUs = 221858777 us
+02-17 17:53:46.531: I/AwesomePlayer(142): after SEEK_VIDEO_ONLY we're late by 0.29 secs
+02-17 17:53:51.421: D/hlsjni(9539): segments[0].id => 7005318 <-> cur_seq_no => 7005319 <-> n_segments => 3
+02-17 17:53:52.875: D/hlsjni(9539): put ts data to queue...450636
+02-17 17:53:52.875: D/hlsjni(9539): pop ts data from queue... 450636
+02-17 17:53:54.296: D/hlsjni(9539): put ts data to queue...531288
+02-17 17:53:54.296: D/hlsjni(9539): pop ts data from queue... 531288
+02-17 17:53:56.418: D/hlsjni(9539): segments[0].id => 7005318 <-> cur_seq_no => 7005321 <-> n_segments => 3
+02-17 17:54:01.425: D/hlsjni(9539): segments[0].id => 7005319 <-> cur_seq_no => 7005321 <-> n_segments => 3
+02-17 17:54:03.750: D/hlsjni(9539): put ts data to queue...1299644
+02-17 17:54:03.750: D/hlsjni(9539): pop ts data from queue... 1299644
+02-17 17:54:06.625: A/libc(9539): Fatal signal 11 (SIGSEGV) at 0x00000000 (code=1), thread 9585 (om.hoperun.live)
+02-17 17:54:06.726: I/DEBUG(138): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+02-17 17:54:06.726: I/DEBUG(138): Build fingerprint: 'Samsung/SGH-T959/SGH-T959/SGH-T959:2.2/FROYO/UVKB5:user/release-keys'
+02-17 17:54:06.730: I/DEBUG(138): pid: 9539, tid: 9585, name: om.hoperun.live  >>> com.hoperun.live <<<
+02-17 17:54:06.730: I/DEBUG(138): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000000
+02-17 17:54:07.242: I/DEBUG(138):     r0 2a119a40  r1 51336e60  r2 00000000  r3 00000000
+02-17 17:54:07.242: I/DEBUG(138):     r4 2a043af0  r5 00000732  r6 2a332248  r7 51336cf8
+02-17 17:54:07.246: I/DEBUG(138):     r8 00000000  r9 2a332979  sl 2a33296b  fp 54608a40
+02-17 17:54:07.246: I/DEBUG(138):     ip 0000003c  sp 54608a08  lr 5130f228  pc 5130eeb4  cpsr 200f0010
+02-17 17:54:07.246: I/DEBUG(138):     d0  4c4d54482f3c3e59  d1  544d472035343a33
+02-17 17:54:07.246: I/DEBUG(138):     d2  2d6e757220796220  d3  6975717328207767
+02-17 17:54:07.246: I/DEBUG(138):     d4  54532e362e322f64  d5  0a293332454c4241
+02-17 17:54:07.246: I/DEBUG(138):     d6  5345524444412f3c  d7  444f422f3c0a3e53
+02-17 17:54:07.246: I/DEBUG(138):     d8  0000000042a20000  d9  0000000000100000
+02-17 17:54:07.246: I/DEBUG(138):     d10 0000000000000000  d11 0000000000000000
+02-17 17:54:07.246: I/DEBUG(138):     d12 0000000000000000  d13 0000000000000000
+02-17 17:54:07.246: I/DEBUG(138):     d14 0000000000000000  d15 0000000000000000
+02-17 17:54:07.246: I/DEBUG(138):     d16 7fffffffffffffff  d17 7fffffffffffffff
+02-17 17:54:07.246: I/DEBUG(138):     d18 0000000000000000  d19 3febb67adbe3adf0
+02-17 17:54:07.246: I/DEBUG(138):     d20 3fb33dc668f7a994  d21 3fc25fc4acaccd9c
+02-17 17:54:07.246: I/DEBUG(138):     d22 3fe00000158d8654  d23 3fb33dc668f7a994
+02-17 17:54:07.250: I/DEBUG(138):     d24 bfc50a78774aaf0e  d25 bf56a47c07a312d6
+02-17 17:54:07.250: I/DEBUG(138):     d26 bf29e7f8513ee4d1  d27 3ef99342e0ee5069
+02-17 17:54:07.250: I/DEBUG(138):     d28 3fa55553e1053a42  d29 bfdffffffd0c5e81
+02-17 17:54:07.250: I/DEBUG(138):     d30 3ff0000000000000  d31 3ff0000000000000
+02-17 17:54:07.250: I/DEBUG(138):     scr 20000013
+02-17 17:54:07.253: I/DEBUG(138): backtrace:
+02-17 17:54:07.253: I/DEBUG(138):     #00  pc 0000feb4  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.253: I/DEBUG(138):     #01  pc 000108b0  /datadata/com.hoperun.live/lib/libhlsjni.so (hls_live_play+1148)
+02-17 17:54:07.253: I/DEBUG(138):     #02  pc 00005158  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.253: I/DEBUG(138):     #03  pc 00012c24  /system/lib/libc.so (__thread_entry+48)
+02-17 17:54:07.257: I/DEBUG(138):     #04  pc 0001238c  /system/lib/libc.so (pthread_create+180)
+02-17 17:54:07.257: I/DEBUG(138): stack:
+02-17 17:54:07.257: I/DEBUG(138):          546089c8  4003f575  /system/lib/libc.so (dlfree)
+02-17 17:54:07.257: I/DEBUG(138):          546089cc  2a043f10  [heap]
+02-17 17:54:07.265: I/DEBUG(138):          546089d0  2a043af0  [heap]
+02-17 17:54:07.265: I/DEBUG(138):          546089d4  2a332248  [heap]
+02-17 17:54:07.265: I/DEBUG(138):          546089d8  0004d5e8  
+02-17 17:54:07.265: I/DEBUG(138):          546089dc  54608eb4  
+02-17 17:54:07.265: I/DEBUG(138):          546089e0  2a043f10  [heap]
+02-17 17:54:07.265: I/DEBUG(138):          546089e4  40040d81  /system/lib/libc.so (free+12)
+02-17 17:54:07.265: I/DEBUG(138):          546089e8  2a1f5898  [heap]
+02-17 17:54:07.265: I/DEBUG(138):          546089ec  51310528  /datadata/com.hoperun.live/lib/libhlsjni.so (hls_freep+16)
+02-17 17:54:07.265: I/DEBUG(138):          546089f0  00000003  
+02-17 17:54:07.265: I/DEBUG(138):          546089f4  5130eb30  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.269: I/DEBUG(138):          546089f8  00000000  
+02-17 17:54:07.269: I/DEBUG(138):          546089fc  00000732  
+02-17 17:54:07.269: I/DEBUG(138):          54608a00  df0027ad  
+02-17 17:54:07.269: I/DEBUG(138):          54608a04  00000000  
+02-17 17:54:07.269: I/DEBUG(138):     #00  54608a08  0000000f  
+02-17 17:54:07.269: I/DEBUG(138):          54608a0c  2a043af0  [heap]
+02-17 17:54:07.269: I/DEBUG(138):          54608a10  51336d00  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.269: I/DEBUG(138):          54608a14  00000000  
+02-17 17:54:07.269: I/DEBUG(138):          54608a18  40073b04  
+02-17 17:54:07.269: I/DEBUG(138):          54608a1c  51336d18  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.269: I/DEBUG(138):          54608a20  2a043af4  [heap]
+02-17 17:54:07.269: I/DEBUG(138):          54608a24  2a143aa8  [heap]
+02-17 17:54:07.269: I/DEBUG(138):          54608a28  00000000  
+02-17 17:54:07.269: I/DEBUG(138):          54608a2c  00000000  
+02-17 17:54:07.269: I/DEBUG(138):          54608a30  00000000  
+02-17 17:54:07.269: I/DEBUG(138):          54608a34  00000000  
+02-17 17:54:07.273: I/DEBUG(138):          54608a38  00333035  
+02-17 17:54:07.273: I/DEBUG(138):          54608a3c  2a331848  [heap]
+02-17 17:54:07.273: I/DEBUG(138):          54608a40  2a332248  [heap]
+02-17 17:54:07.273: I/DEBUG(138):          54608a44  00000732  
+02-17 17:54:07.273: I/DEBUG(138):          ........  ........
+02-17 17:54:07.273: I/DEBUG(138):     #01  54608e88  006ae489  
+02-17 17:54:07.273: I/DEBUG(138):          54608e8c  00000003  
+02-17 17:54:07.273: I/DEBUG(138):          54608e90  00000000  
+02-17 17:54:07.273: I/DEBUG(138):          54608e94  3fe00000  
+02-17 17:54:07.273: I/DEBUG(138):          54608e98  2a043f1c  [heap]
+02-17 17:54:07.273: I/DEBUG(138):          54608e9c  513344c8  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.277: I/DEBUG(138):          54608ea0  513370e8  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.277: I/DEBUG(138):          54608ea4  2a143aa8  [heap]
+02-17 17:54:07.277: I/DEBUG(138):          54608ea8  2a143ae4  [heap]
+02-17 17:54:07.277: I/DEBUG(138):          54608eac  2a143ae0  [heap]
+02-17 17:54:07.277: I/DEBUG(138):          54608eb0  2a1f52d0  [heap]
+02-17 17:54:07.277: I/DEBUG(138):          54608eb4  2a043af4  [heap]
+02-17 17:54:07.277: I/DEBUG(138):          54608eb8  00000000  
+02-17 17:54:07.277: I/DEBUG(138):          54608ebc  51334488  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.277: I/DEBUG(138):          54608ec0  513344c8  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.277: I/DEBUG(138):          54608ec4  2a1f5278  [heap]
+02-17 17:54:07.281: I/DEBUG(138):          ........  ........
+02-17 17:54:07.281: I/DEBUG(138):     #02  54608ee0  54608f00  
+02-17 17:54:07.281: I/DEBUG(138):          54608ee4  5130411c  /datadata/com.hoperun.live/lib/libhlsjni.so
+02-17 17:54:07.281: I/DEBUG(138):          54608ee8  2a1f5278  [heap]
+02-17 17:54:07.281: I/DEBUG(138):          54608eec  4003cc28  /system/lib/libc.so (__thread_entry+52)
+02-17 17:54:07.281: I/DEBUG(138): memory near r0:
+02-17 17:54:07.281: I/DEBUG(138):     2a119a20 00000000 00000000 00000000 00000001  ................
+02-17 17:54:07.281: I/DEBUG(138):     2a119a30 2a11a218 00000000 00000003 00000013  ...*............
+02-17 17:54:07.281: I/DEBUG(138):     2a119a40 2a119950 40073534 00000010 00000063  P..*45.@....c...
+02-17 17:54:07.281: I/DEBUG(138):     2a119a50 00000001 00000040 54544820 2e312f50  ....@... HTTP/1.
+02-17 17:54:07.281: I/DEBUG(138):     2a119a60 2a143968 2a119eb0 00000000 00000000  h9.*...*........
+02-17 17:54:07.281: I/DEBUG(138): memory near r1:
+02-17 17:54:07.300: I/DEBUG(138):     51336e40 4f435349 4e49544e 59544955 00000000  ISCONTINUITY....
+02-17 17:54:07.300: I/DEBUG(138):     51336e50 54584523 3a464e49 00000000 00000000  #EXTINF:........
+02-17 17:54:07.300: I/DEBUG(138):     51336e60 00000023 00000000 73736f70 656c6261  #.......possable
+02-17 17:54:07.300: I/DEBUG(138):     51336e70 6e206120 6d207765 20387533 21676174   a new m3u8 tag!
+02-17 17:54:07.300: I/DEBUG(138):     51336e80 6e6f6320 756e6974 00000a65 00000000   continue.......
+02-17 17:54:07.300: I/DEBUG(138): memory near r4:
+02-17 17:54:07.300: I/DEBUG(138):     2a043ad0 00000018 0000001b 4baa3458 0000001c  ........X4.K....
+02-17 17:54:07.300: I/DEBUG(138):     2a043ae0 00000000 00000000 00000005 00000483  ................
+02-17 17:54:07.300: I/DEBUG(138):     2a043af0 00000000 70747468 322f2f3a 312e3230  ....http://202.1
+02-17 17:54:07.300: I/DEBUG(138):     2a043b00 312e3830 37312e37 30383a30 3336332f  08.17.170:80/363
+02-17 17:54:07.300: I/DEBUG(138):     2a043b10 54306139 48616279 4a4a4135 4a4a4a4a  9a0TybaH5AJJJJJJ
+02-17 17:54:07.300: I/DEBUG(138): memory near r6:
+02-17 17:54:07.300: I/DEBUG(138):     2a332228 0000000a 00000000 74786574 6d74682f  ........text/htm
+02-17 17:54:07.300: I/DEBUG(138):     2a332238 0000006c 00000000 000092d0 0000073a  l...........:...
+02-17 17:54:07.300: I/DEBUG(138):     2a332248 4f44213c 50595443 54482045 50204c4d  <!DOCTYPE HTML P
+02-17 17:54:07.300: I/DEBUG(138):     2a332258 494c4255 2d222043 33572f2f 442f2f43  UBLIC "-//W3C//D
+02-17 17:54:07.300: I/DEBUG(138):     2a332268 48204454 204c4d54 31302e34 61725420  TD HTML 4.01 Tra
+02-17 17:54:07.300: I/DEBUG(138): memory near r7:
+02-17 17:54:07.300: I/DEBUG(138):     51336cd8 69786520 2e2e2e74 0000000a 00000000   exit...........
+02-17 17:54:07.300: I/DEBUG(138):     51336ce8 20736c68 69727473 6520676e 000a646e  hls string end..
+02-17 17:54:07.300: I/DEBUG(138):     51336cf8 54584523 0055334d 54584523 412d582d  #EXTM3U.#EXT-X-A
+02-17 17:54:07.300: I/DEBUG(138):     51336d08 574f4c4c 4341432d 003a4548 00000000  LLOW-CACHE:.....
+02-17 17:54:07.300: I/DEBUG(138):     51336d18 54584523 562d582d 49535245 003a4e4f  #EXT-X-VERSION:.
+02-17 17:54:07.300: I/DEBUG(138): memory near r9:
+02-17 17:54:07.300: I/DEBUG(138):     2a332958 454c4241 0a293332 44412f3c 53455244  ABLE23).</ADDRES
+02-17 17:54:07.300: I/DEBUG(138):     2a332968 3c0a3e53 444f422f 2f3c3e59 4c4d5448  S>.</BODY></HTML
+02-17 17:54:07.300: I/DEBUG(138):     2a332978 3b000a3e 0001a661 468c5531 926eb3c7  >..;a...1U.F..n.
+02-17 17:54:07.300: I/DEBUG(138):     2a332988 39fe34c2 bea08c68 03ab398c 9ecd9565  .4.9h....9..e...
+02-17 17:54:07.300: I/DEBUG(138):     2a332998 15650047 55c1b46a 6e5f3139 99e1359f  G.e.j..U91_n.5..
+02-17 17:54:07.300: I/DEBUG(138): memory near sl:
+02-17 17:54:07.300: I/DEBUG(138):     2a332948 28207767 69757173 2e322f64 54532e36  gw (squid/2.6.ST
+02-17 17:54:07.300: I/DEBUG(138):     2a332958 454c4241 0a293332 44412f3c 53455244  ABLE23).</ADDRES
+02-17 17:54:07.300: I/DEBUG(138):     2a332968 3c0a3e53 444f422f 2f3c3e59 4c4d5448  S>.</BODY></HTML
+02-17 17:54:07.300: I/DEBUG(138):     2a332978 3b000a3e 0001a661 468c5531 926eb3c7  >..;a...1U.F..n.
+02-17 17:54:07.304: I/DEBUG(138):     2a332988 39fe34c2 bea08c68 03ab398c 9ecd9565  .4.9h....9..e...
+02-17 17:54:07.304: I/DEBUG(138): memory near fp:
+02-17 17:54:07.304: I/DEBUG(138):     54608a20 2a043af4 2a143aa8 00000000 00000000  .:.*.:.*........
+02-17 17:54:07.304: I/DEBUG(138):     54608a30 00000000 00000000 00333035 2a331848  ........503.H.3*
+02-17 17:54:07.304: I/DEBUG(138):     54608a40 2a332248 00000732 00003de3 0002f4c8  H"3*2....=......
+02-17 17:54:07.304: I/DEBUG(138):     54608a50 00000000 00000034 00000000 4f422f3c  ....4.......</BO
+02-17 17:54:07.304: I/DEBUG(138):     54608a60 3c3e5944 4d54482f 000a3e4c 65462037  DY></HTML>..7 Fe
+02-17 17:54:07.304: I/DEBUG(138): memory near sp:
+02-17 17:54:07.304: I/DEBUG(138):     546089e8 2a1f5898 51310528 00000003 5130eb30  .X.*(.1Q....0.0Q
+02-17 17:54:07.304: I/DEBUG(138):     546089f8 00000000 00000732 df0027ad 00000000  ....2....'......
+02-17 17:54:07.304: I/DEBUG(138):     54608a08 0000000f 2a043af0 51336d00 00000000  .....:.*.m3Q....
+02-17 17:54:07.304: I/DEBUG(138):     54608a18 40073b04 51336d18 2a043af4 2a143aa8  .;.@.m3Q.:.*.:.*
+02-17 17:54:07.304: I/DEBUG(138):     54608a28 00000000 00000000 00000000 00000000  ................
+02-17 17:54:07.304: I/DEBUG(138): code around pc:
+02-17 17:54:07.304: I/DEBUG(138):     5130ee94 1a000024 e3540000 1affffd1 e59d4004  $.....T......@..
+02-17 17:54:07.304: I/DEBUG(138):     5130eea4 e3540000 0a000009 e5943420 e594042c  ..T..... 4..,...
+02-17 17:54:07.304: I/DEBUG(138):     5130eeb4 e5933000 e3500000 e5933404 e5843414  .0....P..4...4..
+02-17 17:54:07.304: I/DEBUG(138):     5130eec4 0a000002 ebffd460 e3a03000 e584342c  ....`....0..,4..
+02-17 17:54:07.308: I/DEBUG(138):     5130eed4 e3560000 03a00001 0a000002 e1a00006  ..V.............
+02-17 17:54:07.308: I/DEBUG(138): code around lr:
+02-17 17:54:07.308: I/DEBUG(138):     5130f208 e3a01001 e58d002c e58d1028 eaffff1f  ....,...(.......
+02-17 17:54:07.308: I/DEBUG(138):     5130f218 e59f11ec e28d0054 e08f1001 eb000306  ....T...........
+02-17 17:54:07.308: I/DEBUG(138):     5130f228 e3500000 1a000026 e5dd3054 e3530000  ..P.&...T0....S.
+02-17 17:54:07.308: I/DEBUG(138):     5130f238 0affff16 e59d2028 e3520000 0a000045  ....( ....R.E...
+02-17 17:54:07.308: I/DEBUG(138):     5130f248 e59d3004 e3530000 0a00002c e3a00b01  .0....S.,.......
+02-17 17:54:07.605: I/ActivityManager(335): Process com.hoperun.live (pid 9539) has died.
+02-17 17:54:07.605: I/WindowState(335): WIN DEATH: Window{412ea950 com.hoperun.live/com.hoperun.live.activity.PlayVideoActivity paused=false}
+02-17 17:54:07.605: W/WindowManager(335): Force-removing child win Window{41090708 SurfaceView paused=false} from container Window{412ea950 com.hoperun.live/com.hoperun.live.activity.PlayVideoActivity paused=false}
+02-17 17:54:07.609: W/ActivityManager(335): Force removing ActivityRecord{41109410 com.hoperun.live/.activity.PlayVideoActivity}: app died, no saved state
+02-17 17:54:07.636: W/WindowManager(335): Failed looking up window
+02-17 17:54:07.636: W/WindowManager(335): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@40daeeb8 does not exist
+02-17 17:54:07.636: W/WindowManager(335): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7675)
+02-17 17:54:07.636: W/WindowManager(335): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7666)
+02-17 17:54:07.636: W/WindowManager(335): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:854)
+02-17 17:54:07.636: W/WindowManager(335): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:449)
+02-17 17:54:07.636: W/WindowManager(335): 	at dalvik.system.NativeStart.run(Native Method)
+02-17 17:54:07.636: I/WindowState(335): WIN DEATH: null
+02-17 17:54:07.656: I/InputReader(335): Reconfiguring input devices.  changes=0x00000004
+02-17 17:54:07.656: I/InputReader(335): Device reconfigured: id=9, name='mxt224_ts_input', surface size is now 480x800, mode is 1
+02-17 17:54:07.660: I/ChromiumHTTPDataSourceSupport(142): OnReadCompleted, read failed, status 4
+02-17 17:54:07.664: E/NuCachedSource2(142): source returned error -1004, 10 retries left
+02-17 17:54:07.668: D/Zygote(140): Process 9539 terminated by signal (11)
+02-17 17:54:07.687: I/ActivityManager(335): Config changed: {1.0 460mcc1mnc zh_CN sw320dp w320dp h508dp nrml long port finger -keyb/v/h -nav/h s.56 themeResource=null}
+02-17 17:54:07.847: D/dalvikvm(6087): GC_CONCURRENT freed 2014K, 50% free 5476K/10887K, paused 3ms+4ms, total 78ms
+02-17 17:54:07.851: D/dalvikvm(6087): WAIT_FOR_CONCURRENT_GC blocked 54ms
+02-17 17:54:07.910: D/SizeAdaptiveLayout(542): com.android.internal.widget.SizeAdaptiveLayout@40dae1f8child view android.widget.FrameLayout@4119cad0 measured out of bounds at 95px clamped to 96px
+02-17 17:54:07.914: D/SizeAdaptiveLayout(542): com.android.internal.widget.SizeAdaptiveLayout@4133f818child view android.widget.LinearLayout@40f25c48 measured out of bounds at 95px clamped to 96px
+02-17 17:54:07.937: D/SizeAdaptiveLayout(542): com.android.internal.widget.SizeAdaptiveLayout@40de7ac8child view android.widget.FrameLayout@40f370e8 measured out of bounds at 95px clamped to 96px
+02-17 17:54:08.082: W/InputMethodManagerService(335): Got RemoteException sending setActive(false) notification to pid 9539 uid 10048
+02-17 17:54:08.199: D/dalvikvm(6087): GC_EXPLICIT freed 353K, 48% free 5694K/10887K, paused 14ms+18ms, total 116ms
+02-17 17:54:09.941: D/dalvikvm(335): GC_EXPLICIT freed 2771K, 55% free 12550K/27719K, paused 26ms+6ms, total 117ms
+02-17 17:54:10.617: D/AudioHardware(142): AudioHardware pcm playback is going to standby.
+02-17 17:54:10.617: V/AudioHardware(142): closeMixer_l() mMixerOpenCnt: 1
+02-17 17:54:10.617: D/AudioHardware(142): closePcmOut_l() mPcmOpenCnt: 1
+

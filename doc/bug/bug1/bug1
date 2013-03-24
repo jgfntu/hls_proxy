@@ -1,0 +1,245 @@
+--------- beginning of /dev/log/main
+D/hlsjni  (21905): segments[0].id => 770 <-> cur_seq_no => 774 <-> n_segments => 3
+D/PlayVideoActivity(21905): hoperun--centerlayout-----------onclick
+D/PlayVideoActivity(21905): hoperun--onKeyDown------>keyCode = 23
+D/PlayVideoActivity(21905): hoperun--OnkeyDown--------->keycode_ok Visibility=0
+D/PlayVideoActivity(21905): hoperun--showBottomLayout--------------->
+D/PlayVideoActivity(21905): hoperun--showChannelLayout--------------->
+D/ChannelDataOperate(21905): hoperun--queryChannelByType----->type = -1
+D/DBTool  (21905): hoperun--queryBySql-->sql=select * from channel a left join collect b on a.channelInfo_name=b.channel_name
+D/ChannelDataOperate(21905): hoperun--getInfoByCursor----->isLaunch=false count = 207 isJoinTable=true
+D/PlayVideoActivity(21905): hoperun--getListPosition--------->i===========19
+D/PlayVideoActivity(21905): hoperun--loadData------------------>mPos=19  curChannelType=0
+D/PlayVideoActivity(21905): hoperun--onItemClick------------>isShowChannel=true
+D/PlayVideoActivity(21905): hoperun--onItemClick------------>curChannelType=0
+D/PlayVideoActivity(21905): hoperun--showWaitProgress-----------------------
+D/PlayVideoActivity(21905): hoperun--loadVideo--->isReload = false,isNeedInit=true,curInfo.id=18
+D/PlayVideoActivity(21905): hoperun--loadVideo--->urlListIndex=0 urlListSize=3 curInfo.playUrl=http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8,http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctvfyzq&type=ipad,http://live.gslb.letv.com/gslb?stream_id=fyzq&tag=live&ext=m3u8&sign=live_ipad
+D/HttpUtil(21905): checkNetWork------->connectivityManager != null
+D/HttpUtil(21905): checkNetWork------->networkInfos != null
+D/HttpUtil(21905): checkNetWork------->return true
+D/DBTool  (21905): hoperun--queryBySql-->sql=select iscollect from collect where channel_name='CCTV-风云足球'
+D/DBTool  (21905): hoperun--query------>tableName= channel
+D/ChannelDataOperate(21905): hoperun--queryChannelIcon-->columnIndex--->0
+D/PlayVideoActivity(21905): hoperun--refreshChannelInfo--->  icon in db 
+D/ProgramUtil(21905): getProgramById---->cId18
+D/HttpUtil(21905): checkNetWork------->connectivityManager != null
+D/HttpUtil(21905): checkNetWork------->networkInfos != null
+D/HttpUtil(21905): checkNetWork------->return true
+D/PlayVideoActivity(21905): hoperun--handleMessage---->REFRESH_CHANNEL_ID
+D/PlayVideoActivity(21905): hoperun--curInfo===ChannelInfo [id=18, name=CCTV-风云足球, typeId=1, index=, isCollect=true, iconUrl=http://feiying.hoperun.com:8081/hoperun/icon/fengyun.png, playUrl=http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8,http://vdn.apps.cntv.cn/api/getLiveUrlCommonRedirectApi.do?channel=pa://cctv_p2p_hdcctvfyzq&type=ipad,http://live.gslb.letv.com/gslb?stream_id=fyzq&tag=live&ext=m3u8&sign=live_ipad]
+D/ProgramUtil(21905): getServerTime sucess: serverDate = 2013-02-04, serverTime = 15:06
+D/PlayVideoActivity(21905): hoperun--handleMessage---->SET_VIDEO_PATH=http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8
+I/hlsjni  (21905): hls start preparing ===> http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8
+I/hlsjni  (21905): Playback ===> [http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8]
+I/hlsjni  (21905): hls create a new thread...
+D/ProgramUtil(21905): tempTime = 15:06, curMinute = 906
+I/hlsjni  (21905): get into hls_live_thread
+I/hlsjni  (21905): get into [hls_live_play] thread
+D/hlsjni  (21905): ======>pointer [hls_ctx] = 0x2a3823b8
+D/hlsjni  (21905): packet_queue_init
+D/ProgramUtil(21905): calcProgress----------->result=32
+D/PlayVideoActivity(21905): hoperun--getProgramSucess----------->
+D/PlayVideoActivity(21905): hoperun--handleMessage---->REFRESH_SUCESS_PROGRAM
+D/hlsjni  (21905): segments[0].id => 772 <-> cur_seq_no => 774 <-> n_segments => 3
+D/hlsjni  (21905): first step...
+D/hlsjni  (21905): 
+D/hlsjni  (21905): http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8
+D/hlsjni  (21905): http://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/d5f2be9b1cd2f425_13ca4062fce_33.ts?wsApp=HLS&wsMonitor=-1&wsHost=rtmp.cntv.lxdns.com
+D/hlsjni  (21905): ------------------------------
+D/hlsjni  (21905): second step...
+D/hlsjni  (21905): 
+D/hlsjni  (21905): HTTP://rtmp.cntv.lxdns.com/live/cctv-fengyunzuqiu/playlist.m3u8?wsSession=f332137f64f88c92371a069a-113&wsMonitor=-1
+D/hlsjni  (21905): 
+D/hlsjni  (21905): ------------------------------
+F/libc    (21905): Fatal signal 11 (SIGSEGV) at 0x00000000 (code=1), thread 21997 (om.hoperun.live)
+I/DEBUG   (  136): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  136): Build fingerprint: 'Samsung/SGH-T959/SGH-T959/SGH-T959:2.2/FROYO/UVKB5:user/release-keys'
+I/DEBUG   (  136): pid: 21905, tid: 21997, name: om.hoperun.live  >>> com.hoperun.live <<<
+I/DEBUG   (  136): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000000
+I/DEBUG   (  136):     r0 2a382938  r1 00000000  r2 00000001  r3 00000000
+I/DEBUG   (  136):     r4 2a3b93d8  r5 000000ad  r6 2a3c2030  r7 51335ba8
+I/DEBUG   (  136):     r8 00000000  r9 2a3c20dc  sl 2a3c2069  fp 54990a40
+I/DEBUG   (  136):     ip 00000000  sp 54990a08  lr 4003ff65  pc 5130de28  cpsr 200f0010
+I/DEBUG   (  136):     d0  2d2d2d2d2d2d2d2d  d1  2d2d2d2d2d2d2d2d
+I/DEBUG   (  136):     d2  306131373332392d  d3  263331312d61392d
+I/DEBUG   (  136):     d4  71757a6e7579676e  d5  6c79616c702f7569
+I/DEBUG   (  136):     d6  3875336d2e747369  d7  697373655373773f
+I/DEBUG   (  136):     d8  3f8000003f800000  d9  0000000000100000
+I/DEBUG   (  136):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (  136):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (  136):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (  136):     d16 7fffffffffffffff  d17 7fffffffffffffff
+I/DEBUG   (  136):     d18 0000000000000000  d19 3fefffffffffffff
+I/DEBUG   (  136):     d20 3b006679fc6b06e7  d21 3e499bc5c0000000
+I/DEBUG   (  136):     d22 bfdfffffeffd69b5  d23 bfc5555554cbac77
+I/DEBUG   (  136):     d24 bf56c087e80f1e27  d25 bf2a00f9e2cae774
+I/DEBUG   (  136):     d26 bf29e7f851a4c4fd  d27 0000000000000000
+I/DEBUG   (  136):     d28 0000000000000000  d29 3ff0000000000000
+I/DEBUG   (  136):     d30 3ff0000000000000  d31 3ff0000000000000
+I/DEBUG   (  136):     scr 20000013
+I/DEBUG   (  136): 
+I/DEBUG   (  136): backtrace:
+I/DEBUG   (  136):     #00  pc 0000fe28  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):     #01  pc 000104e4  /datadata/com.hoperun.live/lib/libhlsjni.so (hls_live_play+332)
+I/DEBUG   (  136):     #02  pc 00005148  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):     #03  pc 00012c24  /system/lib/libc.so (__thread_entry+48)
+I/DEBUG   (  136):     #04  pc 0001238c  /system/lib/libc.so (pthread_create+180)
+I/DEBUG   (  136): 
+I/DEBUG   (  136): stack:
+I/DEBUG   (  136):          549909c8  2a3c2069  [heap]
+I/DEBUG   (  136):          549909cc  40040da9  /system/lib/libc.so (realloc+12)
+I/DEBUG   (  136):          549909d0  00000000  
+I/DEBUG   (  136):          549909d4  5130f2f8  /datadata/com.hoperun.live/lib/libhlsjni.so (hls_dynarray_add+52)
+I/DEBUG   (  136):          549909d8  54990a5c  
+I/DEBUG   (  136):          549909dc  2a3b9858  [heap]
+I/DEBUG   (  136):          549909e0  2a3823b8  [heap]
+I/DEBUG   (  136):          549909e4  54990a5c  
+I/DEBUG   (  136):          549909e8  00077df8  
+I/DEBUG   (  136):          549909ec  5130da58  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          549909f0  00000000  
+I/DEBUG   (  136):          549909f4  000000ad  
+I/DEBUG   (  136):          549909f8  2a3c2030  [heap]
+I/DEBUG   (  136):          549909fc  51335ba8  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          54990a00  df0027ad  
+I/DEBUG   (  136):          54990a04  00000000  
+I/DEBUG   (  136):     #00  54990a08  00000074  
+I/DEBUG   (  136):          54990a0c  2a3b93d8  [heap]
+I/DEBUG   (  136):          54990a10  51335bb0  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          54990a14  00000000  
+I/DEBUG   (  136):          54990a18  40073b04  
+I/DEBUG   (  136):          54990a1c  51335bc8  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          54990a20  2a3b93dc  [heap]
+I/DEBUG   (  136):          54990a24  2a3823b8  [heap]
+I/DEBUG   (  136):          54990a28  00000000  
+I/DEBUG   (  136):          54990a2c  00000000  
+I/DEBUG   (  136):          54990a30  00000000  
+I/DEBUG   (  136):          54990a34  00000000  
+I/DEBUG   (  136):          54990a38  00303032  
+I/DEBUG   (  136):          54990a3c  54990a6e  
+I/DEBUG   (  136):          54990a40  2a3c2030  [heap]
+I/DEBUG   (  136):          54990a44  000000ad  
+I/DEBUG   (  136):          ........  ........
+I/DEBUG   (  136):     #01  54990e88  00000000  
+I/DEBUG   (  136):          54990e8c  00000000  
+I/DEBUG   (  136):          54990e90  00000000  
+I/DEBUG   (  136):          54990e94  00000000  
+I/DEBUG   (  136):          54990e98  00000000  
+I/DEBUG   (  136):          54990e9c  00000000  
+I/DEBUG   (  136):          54990ea0  00000000  
+I/DEBUG   (  136):          54990ea4  00000000  
+I/DEBUG   (  136):          54990ea8  00000000  
+I/DEBUG   (  136):          54990eac  00000000  
+I/DEBUG   (  136):          54990eb0  2a3b8fd0  [heap]
+I/DEBUG   (  136):          54990eb4  2a3b93dc  [heap]
+I/DEBUG   (  136):          54990eb8  00000000  
+I/DEBUG   (  136):          54990ebc  51333370  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          54990ec0  513333b0  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          54990ec4  2a0dbe78  [heap]
+I/DEBUG   (  136):          ........  ........
+I/DEBUG   (  136):     #02  54990ee0  54990f00  
+I/DEBUG   (  136):          54990ee4  5130310c  /datadata/com.hoperun.live/lib/libhlsjni.so
+I/DEBUG   (  136):          54990ee8  2a0dbe78  [heap]
+I/DEBUG   (  136):          54990eec  4003cc28  /system/lib/libc.so (__thread_entry+52)
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near r0:
+I/DEBUG   (  136):     2a382918 003c0000 00000000 00000002 ffffffcf  ..<.............
+I/DEBUG   (  136):     2a382928 00000000 00000000 2a28e5d8 00000013  ..........(*....
+I/DEBUG   (  136):     2a382938 2a303fc8 40073534 00000010 00000023  .?0*45.@....#...
+I/DEBUG   (  136):     2a382948 c89c0508 2a387758 00000006 2a387708  ....Xw8*.....w8*
+I/DEBUG   (  136):     2a382958 00000055 00000000 65762065 0000001b  U.......e ve....
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near r4:
+I/DEBUG   (  136):     2a3b93b8 00000000 00000000 00000000 00000000  ................
+I/DEBUG   (  136):     2a3b93c8 00000000 00000000 3f800000 00000483  ...........?....
+I/DEBUG   (  136):     2a3b93d8 00077df8 50545448 722f2f3a 2e706d74  .}..HTTP://rtmp.
+I/DEBUG   (  136):     2a3b93e8 76746e63 64786c2e 632e736e 6c2f6d6f  cntv.lxdns.com/l
+I/DEBUG   (  136):     2a3b93f8 2f657669 76746363 6e65662d 6e757967  ive/cctv-fengyun
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near r6:
+I/DEBUG   (  136):     2a3c2010 3f800000 00000000 00000000 00000000  ...?............
+I/DEBUG   (  136):     2a3c2020 00000000 3f800000 000082f0 000000ba  .......?........
+I/DEBUG   (  136):     2a3c2030 54584523 0a55334d 54584523 532d582d  #EXTM3U.#EXT-X-S
+I/DEBUG   (  136):     2a3c2040 41455254 4e492d4d 52503a46 4152474f  TREAM-INF:PROGRA
+I/DEBUG   (  136):     2a3c2050 44492d4d 202c313d 444e4142 54444957  M-ID=1, BANDWIDT
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near r7:
+I/DEBUG   (  136):     51335b88 69786520 2e2e2e74 0000000a 00000000   exit...........
+I/DEBUG   (  136):     51335b98 20736c68 69727473 6520676e 000a646e  hls string end..
+I/DEBUG   (  136):     51335ba8 54584523 0055334d 54584523 412d582d  #EXTM3U.#EXT-X-A
+I/DEBUG   (  136):     51335bb8 574f4c4c 4341432d 003a4548 00000000  LLOW-CACHE:.....
+I/DEBUG   (  136):     51335bc8 54584523 562d582d 49535245 003a4e4f  #EXT-X-VERSION:.
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near r9:
+I/DEBUG   (  136):     2a3c20bc 38386634 33323963 30613137 2d613936  4f88c92371a069a-
+I/DEBUG   (  136):     2a3c20cc 26333131 6f4d7377 6f74696e 312d3d72  113&wsMonitor=-1
+I/DEBUG   (  136):     2a3c20dc 4007000a 000000b8 000086c3 000086a8  ...@............
+I/DEBUG   (  136):     2a3c20ec 00000000 2a3cb930 00000001 00000000  ....0.<*........
+I/DEBUG   (  136):     2a3c20fc 00000000 00000000 00000000 000a576c  ............lW..
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near sl:
+I/DEBUG   (  136):     2a3c2048 52503a46 4152474f 44492d4d 202c313d  F:PROGRAM-ID=1, 
+I/DEBUG   (  136):     2a3c2058 444e4142 54444957 39343d48 30303031  BANDWIDTH=491000
+I/DEBUG   (  136):     2a3c2068 5454480a 2f2f3a50 706d7472 746e632e  .HTTP://rtmp.cnt
+I/DEBUG   (  136):     2a3c2078 786c2e76 2e736e64 2f6d6f63 6576696c  v.lxdns.com/live
+I/DEBUG   (  136):     2a3c2088 7463632f 65662d76 7579676e 71757a6e  /cctv-fengyunzuq
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near fp:
+I/DEBUG   (  136):     54990a20 2a3b93dc 2a3823b8 00000000 00000000  ..;*.#8*........
+I/DEBUG   (  136):     54990a30 00000000 00000000 00303032 54990a6e  ........200.n..T
+I/DEBUG   (  136):     54990a40 2a3c2030 000000ad 30313934 00003030  0 <*....491000..
+I/DEBUG   (  136):     54990a50 00000000 00000000 00000000 50545448  ............HTTP
+I/DEBUG   (  136):     54990a60 722f2f3a 2e706d74 76746e63 64786c2e  ://rtmp.cntv.lxd
+I/DEBUG   (  136): 
+I/DEBUG   (  136): memory near sp:
+I/DEBUG   (  136):     549909e8 00077df8 5130da58 00000000 000000ad  .}..X.0Q........
+I/DEBUG   (  136):     549909f8 2a3c2030 51335ba8 df0027ad 00000000  0 <*.[3Q.'......
+I/DEBUG   (  136):     54990a08 00000074 2a3b93d8 51335bb0 00000000  t.....;*.[3Q....
+I/DEBUG   (  136):     54990a18 40073b04 51335bc8 2a3b93dc 2a3823b8  .;.@.[3Q..;*.#8*
+I/DEBUG   (  136):     54990a28 00000000 00000000 00000000 00000000  ................
+I/DEBUG   (  136): 
+I/DEBUG   (  136): code around pc:
+I/DEBUG   (  136):     5130de08 1a000024 e3540000 1affffd1 e59d4004  $.....T......@..
+I/DEBUG   (  136):     5130de18 e3540000 0a000009 e5943420 e594042c  ..T..... 4..,...
+I/DEBUG   (  136):     5130de28 e5933000 e3500000 e5933404 e5843414  .0....P..4...4..
+I/DEBUG   (  136):     5130de38 0a000002 ebffd47a e3a03000 e584342c  ....z....0..,4..
+I/DEBUG   (  136):     5130de48 e3560000 03a00001 0a000002 e1a00006  ..V.............
+I/DEBUG   (  136): 
+I/DEBUG   (  136): code around lr:
+I/DEBUG   (  136):     4003ff44 2700e036 f04fe002 46570a00 44784826  6..'..O...WF&HxD
+I/DEBUG   (  136):     4003ff54 31b4f8d0 d5030799 70dcf500 eac6f7fc  ...1.......p....
+I/DEBUG   (  136):     4003ff64 0f00f1ba b117d006 f7ff4638 f10afb01  ........8F......
+I/DEBUG   (  136):     4003ff74 e01e0708 f7fd4628 4607ff25 f854b1c8  ....(F..%..F..T.
+I/DEBUG   (  136):     4003ff84 07c20c04 f854d407 f0111c08 bf140f01  ......T.........
+--------- beginning of /dev/log/system
+I/BootReceiver(  322): Copying /data/tombstones/tombstone_04 to DropBox (SYSTEM_TOMBSTONE)
+I/ActivityManager(  322): Process com.hoperun.live (pid 21905) has died.
+I/WindowState(  322): WIN DEATH: Window{40e2d160 com.hoperun.live/com.hoperun.live.activity.PlayVideoActivity paused=false}
+W/WindowManager(  322): Force-removing child win Window{40e37810 SurfaceView paused=false} from container Window{40e2d160 com.hoperun.live/com.hoperun.live.activity.PlayVideoActivity paused=false}
+W/ActivityManager(  322): Force removing ActivityRecord{40dda070 com.hoperun.live/.activity.PlayVideoActivity}: app died, no saved state
+W/WindowManager(  322): Failed looking up window
+W/WindowManager(  322): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@4103c7a0 does not exist
+W/WindowManager(  322): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7675)
+W/WindowManager(  322): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7666)
+W/WindowManager(  322): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:854)
+W/WindowManager(  322): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:449)
+W/WindowManager(  322): 	at dalvik.system.NativeStart.run(Native Method)
+I/WindowState(  322): WIN DEATH: null
+I/InputReader(  322): Reconfiguring input devices.  changes=0x00000004
+I/InputReader(  322): Device reconfigured: id=9, name='mxt224_ts_input', surface size is now 480x800, mode is 1
+I/ActivityManager(  322): Config changed: {1.0 460mcc1mnc zh_CN sw320dp w320dp h508dp nrml long port finger -keyb/v/h -nav/h s.102 themeResource=null}
+I/ChromiumHTTPDataSourceSupport(10919): OnReadCompleted, read failed, status 4
+E/NuCachedSource2(10919): source returned error -1004, 10 retries left
+D/Zygote  (  138): Process 21905 terminated by signal (11)
+D/SizeAdaptiveLayout(  407): com.android.internal.widget.SizeAdaptiveLayout@4115b850child view android.widget.FrameLayout@413eec58 measured out of bounds at 95px clamped to 96px
+D/SizeAdaptiveLayout(  407): com.android.internal.widget.SizeAdaptiveLayout@41395380child view android.widget.FrameLayout@413cc520 measured out of bounds at 95px clamped to 96px
+W/InputMethodManagerService(  322): Got RemoteException sending setActive(false) notification to pid 21905 uid 10066
+D/dalvikvm(  513): GC_CONCURRENT freed 2796K, 49% free 7404K/14471K, paused 3ms+8ms, total 100ms
+D/dalvikvm(  513): WAIT_FOR_CONCURRENT_GC blocked 75ms
+D/dalvikvm(  513): WAIT_FOR_CONCURRENT_GC blocked 18ms
+D/dalvikvm(  513): WAIT_FOR_CONCURRENT_GC blocked 18ms
+D/dalvikvm(  513): GC_FOR_ALLOC freed 1259K, 51% free 7218K/14471K, paused 53ms, total 60ms
+D/dalvikvm(  513): GC_FOR_ALLOC freed 209K, 40% free 8710K/14471K, paused 22ms, total 24ms
+D/dalvikvm(  513): GC_FOR_ALLOC freed 2066K, 46% free 7950K/14471K, paused 21ms, total 30ms
+D/dalvikvm(  513): GC_FOR_ALLOC freed 1162K, 43% free 8342K/14471K, paused 26ms, total 31ms
+D/dalvikvm(  322): GC_EXPLICIT freed 3455K, 48% free 12216K/23175K, paused 32ms+6ms, total 116ms

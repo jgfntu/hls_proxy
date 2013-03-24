@@ -1,0 +1,9 @@
+1、2013-02-04
+	bug1 为播放央视《风云足球》频道，必挂
+	
+2、2013-02-05
+	bug2 为播放普通频道崩溃的bug信息，搜狐BTV频道，播放大概5分钟左右
+
+3、2013-02-17
+	bug3 为播放央视频道，源乐视网CCTV1 ===> [http://live.gslb.letv.com/gslb?stream_id=cctv1&tag=live&ext=m3u8&sign=live_ipad]
+		出现put queue data size为182字节的错误

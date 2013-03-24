@@ -1,0 +1,195 @@
+乐视网：CCTV1 ===> [http://live.gslb.letv.com/gslb?stream_id=cctv1&tag=live&ext=m3u8&sign=live_ipad]不能够播放，404错误
+
+但其他央视如CCTV2等可以播放
+
+测试其他播放器： avplay可以播放，说明源没有问题，抓avplay的包作为对比（avplay.wsk)
+				VLC也不能播放，错误与proxy类似，404错误
+				
+				
+对比发现，错误的原因为：
+---------------------------------------------------------------------------------
+avplay:
+
+	GET /m3u8/cctv1/2013021710/1361068146_6360_730192.ts?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361068165&pnl=813,810,204&stream_id=cctv1&sign=live_ipad HTTP/1.1
+	User-Agent: Lavf53.21.0
+	Accept: */*
+	Range: bytes=0-
+	Connection: close
+	Host: 61.155.163.40
+
+	HTTP/1.0 206 Partial Content
+	Server: letv/2013-02-04/2.76/letv
+	Date: Sun, 17 Feb 2013 02:29:26 GMT
+	Content-Type: application/octet-stream
+	ppas-ver: v1.0.14.2
+	Accept-Ranges: bytes
+	Cache-Control: max-age=31536000
+	Expires: Mon, 17 Feb 2014 02:29:26 GMT
+	Last-Modified: Sun, 17 Feb 2013 02:29:17 GMT
+	Content-Range: bytes 0-730191/730192
+	Content-Length: 730192
+	X-Cache: MISS from run-gw
+	Connection: close
+---------------------------------------------------------------------------------
+proxy:
+
+	GET /m3u8/cctv1/2013021710/1361067575_6640_669280.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=0&cipi=3396284708&tm=1361067604&pnl=813,810,204&stream_id=cctv1&sign=live_ipad HTTP/1.1
+	Range: bytes=0-
+	User-Agent: libcurl-agent/1.0
+	Host: 61.155.163.40
+	Accept: */*
+
+	HTTP/1.0 404 Not Found
+	Server: letv/2013-02-04/2.76/letv
+	Date: Sun, 17 Feb 2013 02:20:04 GMT
+	Content-Type: text/html
+	Content-Length: 182
+	X-Cache: MISS from run-gw
+	Connection: close
+
+	<html>
+	<head><title>404 Not Found</title></head>
+	<body bgcolor="white">
+	<center><h1>404 Not Found</h1></center>
+	<hr><center>letv/2013-02-04/2.76/letv</center>
+	</body>
+	</html>
+---------------------------------------------------------------------------------
+VLC:
+	
+	GET /m3u8/cctv1/2013021710/1361069245_7480_903528.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=0&cipi=3396284708&tm=1361069272&pnl=813,810,204&stream_id=cctv1&sign=live_ipad HTTP/1.1
+	Host: 61.155.163.40
+	User-Agent: VLC/2.0.1 LibVLC/2.0.3
+	Range: bytes=0-
+	Connection: close
+	Icy-MetaData: 1
+
+	HTTP/1.0 404 Not Found
+	Server: letv/2013-02-04/2.76/letv
+	Date: Sun, 17 Feb 2013 02:47:52 GMT
+	Content-Type: text/html
+	Content-Length: 182
+	X-Cache: MISS from run-gw
+	Connection: close
+
+	<html>
+	<head><title>404 Not Found</title></head>
+	<body bgcolor="white">
+	<center><h1>404 Not Found</h1></center>
+	<hr><center>letv/2013-02-04/2.76/letv</center>
+	</body>
+	</html>
+
+=================================================================================
+
+问题原因： LETV的segment's url也是相对地址，需要拼接
+---------------------------------------------------------------------------------
+GET /m3u8/cctv1/desc.m3u8?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad HTTP/1.1
+User-Agent: Lavf53.21.0
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: 61.155.163.40
+
+HTTP/1.0 206 Partial Content
+Server: letv/2013-02-04/2.76/letv
+Date: Sun, 17 Feb 2013 02:29:24 GMT
+Content-Type: application/octet-stream
+ppas-ver: v1.0.14.2
+Accept-Ranges: bytes
+Cache-Control: max-age=2
+Expires: Sun, 17 Feb 2013 02:29:26 GMT
+Last-Modified: Sun, 17 Feb 2013 02:29:23 GMT
+effectivelen: 215
+line: 3
+Content-Range: bytes 0-718/719
+Content-Length: 719
+X-Cache: MISS from run-gw
+Connection: close
+
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:117637
+#EXTINF:8,
+2013021710/1361068144_7960_755008.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=0&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+#EXTINF:6,
+2013021710/1361068146_6360_730192.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=0&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+#EXTINF:6,
+2013021710/1361068153_5960_531100.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=0&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+---------------------------------------------------------------------------------
+对于目前的版本，类似与SOHU TV，利用本次的Host: 61.155.163.40来拼接，此时对于CCTV1、CCTV3等均出现问题，返回404
+而CCTV2等能够正常播放，原因是获取的segments为下面的：
+---------------------------------------------------------------------------------
+GET /m3u8/cctv2_bjdx1/desc.m3u8?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=220.181.155.72,220.181.153.111&cipi=3396284708&tm=1361088732&pnl=813,820,201&stream_id=cctv2&sign=live_ipad HTTP/1.1
+Host: 61.155.163.40
+User-Agent: VLC/2.0.1 LibVLC/2.0.3
+Range: bytes=0-
+Connection: close
+Icy-MetaData: 1
+
+HTTP/1.0 206 Partial Content
+Server: letv/2013-02-04/2.76/letv
+Date: Sun, 17 Feb 2013 08:12:12 GMT
+Content-Type: application/octet-stream
+ppas-ver: v1.0.14.2
+Accept-Ranges: bytes
+Cache-Control: max-age=2
+Expires: Sun, 17 Feb 2013 08:12:14 GMT
+Last-Modified: Sun, 17 Feb 2013 08:12:11 GMT
+effectivelen: 221
+line: 3
+Content-Range: bytes 0-766/767
+Content-Length: 767
+X-Cache: MISS from run-gw
+Connection: close
+
+#EXTM3U
+
+#EXT-X-TARGETDURATION:10
+
+#EXT-X-MEDIA-SEQUENCE:739917
+
+#EXTINF:6,
+
+2013021716/1361088711_5960_575844.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=220.181.153.111&cipi=3396284708&tm=1361088732&pnl=813,820,201&stream_id=cctv2&sign=live_ipad
+#EXTINF:6,
+
+2013021716/1361088716_5960_481092.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=220.181.153.111&cipi=3396284708&tm=1361088732&pnl=813,820,201&stream_id=cctv2&sign=live_ipad
+#EXTINF:6,
+
+2013021716/1361088722_5960_689584.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=220.181.153.111&cipi=3396284708&tm=1361088732&pnl=813,820,201&stream_id=cctv2&sign=live_ipad
+---------------------------------------------------------------------------------
+特别注意与CCTV1的segments的区别在于&path=220.181.153.111字段，CCTV2利用ffmpeg或VLC或proxy均可以播放，利用与SOHU一样的方式这样拼接为
+---------------------------------------------------------------------------------
+GET /m3u8/cctv1/2013021710/1361068144_7960_755008.ts?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad HTTP/1.1
+User-Agent: Lavf53.21.0
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: 61.155.163.40
+---------------------------------------------------------------------------------
+能够正常获取数据（实际是巧合，原因如下）；
+而CCTV1利用ffmpeg能够播放，是拼接的原始的live.gslb.letv.com
+---------------------------------------------------------------------------------
+GET /2013021710/1361068144_7960_755008.ts?tag=live&video_type=m3u8&useloc=0&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=0&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad HTTP/1.1
+User-Agent: Lavf53.21.0
+Accept: */*
+Range: bytes=0-
+Connection: close
+Host: live.gslb.letv.com
+
+HTTP/1.0 302 Moved Temporarily
+Location: http://61.155.163.40/m3u8/cctv1/2013021710/1361068144_7960_755008.ts?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+Pragma: no-cache
+Cache-Control: no-cache, no-store
+Content-Length: 0
+Content-Type: text/html; charset=ISO-8859-1
+X-Cache: MISS from run-gw
+Connection: close
+---------------------------------------------------------------------------------
+注意返回的重定向的地址
+http://61.155.163.40/m3u8/cctv1/2013021710/1361068144_7960_755008.ts?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361068164&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+与我们利用与SOHU的拼接方式获得的地址很类似，区别是&path字段的填充与否的问题。
+也就是说LETV原本是需要利用最初的host来作为相对url的拼接的，以便填充&path字段的IP地址（以重定向的形式返回url)，但cctv1的相对地址里面&path为0，而cctv2的&path已经返回了IP，对于CCTV2直接利用本次请求的url的HOST也能够获取
+数据，而cctv1就必须利用原始的host来获取包含&path IP字段的绝对url（这也是一个重定向）,再次请求获取数据
+

@@ -1,0 +1,82 @@
+
+2013-01-14	#add by juguofeng
+	first version 0.1:
+	--------------------------------------------------------------------------------------------
+		<usage> download PPTV source one playlist ts data
+		#cd liveTV
+		#make
+		#./httplive http://61.155.219.118:80/live/5/45/847a4e1e97584d39a961f5604e90c1c4.m3u8?
+	--------------------------------------------------------------------------------------------
+	
+2013-01-14	#add by juguofeng
+	[liveTV] version 0.2:
+	--------------------------------------------------------------------------------------------
+		<usage> PPTV source one playlist ts live
+		#cd liveTV
+		#make
+		#./httplive
+		
+		client use "http://host_ip:8080/livetv.ts"
+		eg.
+			vlc http://localhost:8080/livetv.ts
+	--------------------------------------------------------------------------------------------
+	
+2013-01-16	#add by juguofeng
+	[liveTV] version 0.2.1:
+	--------------------------------------------------------------------------------------------
+		<usage> PPTV source original url one playlist ts live
+		#cd liveTV
+		#make
+		#./httplive
+		
+		client use "http://host_ip:8080/livetv.ts"
+		eg.
+			vlc http://localhost:8080/livetv.ts
+	--------------------------------------------------------------------------------------------
+
+2013-01-18	#add by juguofeng
+	[liveTV] version 0.3.0:
+	--------------------------------------------------------------------------------------------
+		<usage> PPTV source live, support playlist reloading
+		#cd liveTV
+		#make
+		#./httplive
+		
+		client use "http://host_ip:8080/livetv.ts"
+		eg.
+			vlc http://localhost:8080/livetv.ts
+	--------------------------------------------------------------------------------------------
+	
+2013-01-20	#add by juguofeng
+	[liveTV] version 0.4.0:
+	--------------------------------------------------------------------------------------------
+		<usage> 稳定支持PPTV和搜狐高清源，CNTV源由于重定向种类多，部分支持，其他待测
+				（本版本加入了列表重加载、重定向、url绝对地址拼接等功能，但不排除内存泄漏等情况）
+		#cd liveTV
+		#make
+		#./httplive
+		
+		client use "http://host_ip:8080/livetv.ts"
+		eg.
+			vlc http://localhost:8080/livetv.ts
+	--------------------------------------------------------------------------------------------
+	
+2013-01-28	#add by juguofeng
+	[liveTV] version 0.4.3:
+	--------------------------------------------------------------------------------------------
+		<usage> 增加了一个演示版本的android工程，封装了简单的开始播放的事件接口
+		#cd liveTV
+		#sh compile.sh android
+		自动生成了libhlsjni.so，然后利用Eclipse工具，编译生成apk，打开之后自动播放电视直播
+		
+		#############################################
+		#cd liveTV
+		#sh compile.sh linux
+		#./httplive
+		
+		client use "http://host_ip:8080/livetv.ts"
+		eg.
+			vlc http://localhost:8080/livetv.ts
+
+	--------------------------------------------------------------------------------------------
+	

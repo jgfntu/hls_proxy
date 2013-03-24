@@ -1,0 +1,2 @@
+2013-02-17
+	利用未strip过的so库，arm-linux-androideabi-addr2line定位出代码的位置

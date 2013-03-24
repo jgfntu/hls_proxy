@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black">
+<!-- 
+    <EditText
+        android:id="@+id/urlinput"
+        android:layout_width="fill_parent"
+        android:layout_height="20dip" /> -->
+
+    <VideoView
+        android:id="@+id/mysurfaceView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/pause1_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="广东" />
+        <Button
+            android:id="@+id/pause2_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="江苏" />
+
+        <Button
+            android:id="@+id/pause3_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="东方" />
+        <Button
+            android:id="@+id/pause4_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="浙江" />
+        <Button
+            android:id="@+id/pause5_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="北京" />
+        <Button
+            android:id="@+id/pause6_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="辽宁" />
+        <Button
+            android:id="@+id/pause7_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="安徽" />
+        <Button
+            android:id="@+id/pause8_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="东南" />
+        <Button
+            android:id="@+id/pause9_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="北京" />
+        <Button
+            android:id="@+id/pause10_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="山西" />
+        <Button
+            android:id="@+id/pause11_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_weight="1" 
+            android:text="江西" />
+         <Button
+            android:id="@+id/pause12_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:text="厦门" />
+
+    </LinearLayout>
+
+</RelativeLayout>

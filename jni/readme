@@ -1,0 +1,6 @@
+
+1、liveTV目录存放liveTV proxy相关的代码
+
+2、arm-linux-androideabi存放一些本地交叉编译的库（仿照VLC，并且由于libcurl库用NDK编译有问题，故利用android-ndk-r8b的make-standalone-toolchain.sh脚本，制作一个独立的交叉编译工具链，比原生目录下的toolchain的编译链完整）
+
+3、

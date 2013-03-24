@@ -1,0 +1,36 @@
+juguofeng@HP:~/work/project/OTT_GIT/LIVETV_PROXY/jni/liveTV$ ./httplive 
+--------------------------------------------------------------
+HLS proxy version 0.5.0, httplive built Feb 17 2013 10:18:05
+--------------------------------------------------------------
+Playback ===> [http://live.gslb.letv.com/gslb?stream_id=cctv1&tag=live&ext=m3u8&sign=live_ipad]
+hls create a new thread...
+hls create a new thread...
+get into hls_live_thread
+get into hls_mongoose_thread
+get into [hls_live_play] thread
+======>pointer [hls_ctx] = 0xb5d00478
+packet_queue_init
+Mongoose web server v. 3.5 started on port(s) 8080 with web root [.]
+redirect_url >>> http://61.155.163.40/m3u8/cctv1/desc.m3u8?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361067604&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+new url >>> http://61.155.163.40/m3u8/cctv1/desc.m3u8?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361067604&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+first step...
+
+http://61.155.163.40/m3u8/cctv1/desc.m3u8?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361067604&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+
+>>>no variants, but segment is here, so create variant first	-- 1
+second step...
+
+http://61.155.163.40/m3u8/cctv1/desc.m3u8?tag=live&video_type=m3u8&useloc=1&clipsize=128&clipcount=10&f_ulrg=0&cmin=3&cmax=10&path=114.80.187.244&cipi=3396284708&tm=1361067604&pnl=813,810,204&stream_id=cctv1&sign=live_ipad
+packet_queue_init
+hls create a new thread...
+after first playlist : cur_seq_no = 117555
+get into playlist reloading loop...
+hls download thread are working now...
+put ts data to queue...182
+put ts data to queue...182
+put ts data to queue...182
+segments[0].id => 117552 <-> cur_seq_no => 117555 <-> n_segments => 3
+segments[0].id => 117553 <-> cur_seq_no => 117555 <-> n_segments => 3
+put ts data to queue...182
+^\退出 (核心已转储)
+juguofeng@HP:~/work/project/OTT_GIT/LIVETV_PROXY/jni/liveTV$ 

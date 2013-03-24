@@ -1,0 +1,46 @@
+*~
+*.app
+*.cache
+*.dylib
+*.lo
+*.lo?
+*.la
+*.moc.cpp
+*.o
+*.so
+*.pc
+*.vlt
+*.class
+*.dmg
+.DS_Store
+.deps
+.libs
+.dirstamp
+
+# Ignore CMake Stuff
+cmake
+CMakeFiles
+CTestTestfile.cmake
+cmake_install.cmake
+cmake_uninstall.cmake
+CMakeCache.txt
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# Ignore build dirs
+build-*
+contrib-*
+install-*
+
+########################################################################
+#							copy from vlc							   #
+########################################################################
+
+*.swp
+
+libs
+obj
+
+bin/*
+gen/*
+.settings
