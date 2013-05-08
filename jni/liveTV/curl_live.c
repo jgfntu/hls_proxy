@@ -280,6 +280,87 @@ int curl_http_header(char *url_live, http_payload_t *host_url, http_payload_t *h
 	return 0;
 }
 
+/* ------------------------------------------------------------------------ */
+/*
+ * libcurl callback func for http payload data parsing
+ */
+static size_t probe_WriteMemoryCallback(void *contents, size_t size, size_t nmemb, void *userp)
+{
+	size_t realsize = size * nmemb;
+	http_payload_t *mem = (http_payload_t *)userp;
+
+	//hls_dbg("callback write...\n");	
+	
+	/* TODO
+	 * waiting for a better method
+	 * (and careful: if realloc failed, we may lost the original malloced memory,
+	 * really not a good idea)
+	 */
+	mem->memory = realloc(mem->memory, mem->size + realsize + 1);
+	if (mem->memory == NULL) {
+		/* out of memory! */
+		hls_err("not enough memory (realloc returned NULL)\n");
+		exit(EXIT_FAILURE);
+	}
+
+	memcpy(&(mem->memory[mem->size]), contents, realsize);
+	mem->size += realsize;
+	mem->memory[mem->size] = 0;
+	
+	/* FIXME not a good idea */
+	//return realsize;
+}
+
+/*
+ * func for http probe downloading by libcurl
+ */
+int curl_probe_download(char *url_live, http_payload_t *http_payload)
+{
+	CURL *curl_handle;
+	
+	//char *redirect_url;
+	//int response_code;
+
+	http_payload_t *chunk = http_payload;
+
+	chunk->memory = malloc(1);  	/* will be grown as needed by the realloc above */
+	chunk->size = 0;    			/* no data at this point */
+
+	//curl_global_init(CURL_GLOBAL_ALL);
+
+	/* init the curl session */
+	curl_handle = curl_easy_init();
+
+	/* specify URL to get */
+	curl_easy_setopt(curl_handle, CURLOPT_URL, url_live);
+	
+	/* FIXME for LETV's relative url cast 
+	 * rederection call curl_http_header(), this fun has rederection inside */
+	curl_easy_setopt(curl_handle, CURLOPT_FOLLOWLOCATION, 1);
+
+	/* send all data to this function  */
+	curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, probe_WriteMemoryCallback);
+
+	/* we pass our 'chunk' struct to the callback function */
+	curl_easy_setopt(curl_handle, CURLOPT_WRITEDATA, (void *)chunk);
+	
+	/* add http GET/ range context */
+	curl_easy_setopt(curl_handle, CURLOPT_RANGE,"0-1023");		/* ??? range do not work ??? */
+	
+	/* some servers don't like requests that are made without a user-agent
+     * field, so we provide one */
+	curl_easy_setopt(curl_handle, CURLOPT_USERAGENT, "libcurl-agent/1.0");
+
+	/* this fun will not return until the http payload is all download */
+	curl_easy_perform(curl_handle);
+
+	/* cleanup curl stuff */
+	curl_easy_cleanup(curl_handle);
+
+	return 0;
+}
+/* ------------------------------------------------------------------------ */
+
 void curl_http_init(void)
 {
 	curl_global_init(CURL_GLOBAL_ALL);

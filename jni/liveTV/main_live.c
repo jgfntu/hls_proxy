@@ -217,6 +217,48 @@ int hls_create_virtual_file(char *file_name)
 	return HLS_SUCCESS;
 }
 
+/**
+ *	is flv streaming media ?
+ */
+static int isFLVLiveStreaming(char *s)
+{
+	const char *peek = s;
+
+	int size = strlen(s);
+	if (size < 3)
+		return HLS_FALSE;
+
+	if (memcmp(peek, "FLV", 3) != 0)
+		return HLS_FALSE;
+	
+	return HLS_TRUE;
+}
+
+/**
+ * probe streaming media protocol
+ */
+static int stream_protocol_probe(char *url)
+{
+	/* call curl get some data for probe */
+	http_payload_t probe_payload;
+	int ret = HLS_FALSE;
+	
+	curl_probe_download(url, &probe_payload);
+	
+	//hls_dbg("===> probe payload size = %d\n", probe_payload.size);
+	//hls_dbg("%s\n", probe_payload.memory);
+	
+	/* this proxy only used for HLS m3u8 */
+	if (/* m3u8 */isHTTPLiveStreaming(probe_payload.memory) == HLS_TRUE)
+		ret = HLS_M3U8;
+	else if (/* flv */isFLVLiveStreaming(probe_payload.memory) == HLS_TRUE)
+		ret = HLS_FLV;
+		
+	free(probe_payload.memory);
+	
+	return ret;
+}
+
 #ifndef __ANDROID_
 /**
  * main func by linux working, not support TV channel change
@@ -228,7 +270,7 @@ int main(int argc, char *argv[])
 	/* TODO waiting a better place */
 	
 	/* PPTV */
-	char live_url[] = "http://web-play.pptv.com/web-m3u8-300164.m3u8";
+	//char live_url[] = "http://web-play.pptv.com/web-m3u8-300164.m3u8";
 	//char live_url[] = "http://web-play.pptv.com/web-m3u8-300166.m3u8";
 	//char live_url[] = "http://web-play.pptv.com/web-m3u8-300169.m3u8";
 	/* -------------------------------------------------------------------------------------------------------------- */
@@ -270,7 +312,8 @@ int main(int argc, char *argv[])
 	//char live_url[] = "http://tsl5.hls.cutv.com/cutvChannelLive/Qg929n9.m3u8";
 	
 	/* some flv source */
-	//char live_url[] = "http://v4.cztv.com/channels/107/500.flv/live";
+	char live_url[] = "http://v4.cztv.com/channels/107/500.flv/live";
+	//char live_url[] = "http://125.211.216.198/channels/hljtv/wypd/flv:sd/live?1342275792593";
 	
 	/* bug source test */
 	//char live_url[] = "http://114.112.34.103:82/live/5/45/3bde7498f8b64e738f7e5b4938415b3d.m3u";
@@ -278,6 +321,24 @@ int main(int argc, char *argv[])
 	/* -------------------------------------------------------------------------------------------------------------- */	
 	
 	REPORT_VERSION("httplive");
+	
+	/* init libcurl (for protocol probe) */
+	curl_http_init();
+
+	/* TODO first most important thing, probe the streaming media protocol */
+	switch(stream_protocol_probe(live_url)) {
+		case HLS_M3U8 : /* go on this proxy */
+			hls_dbg("===> hls protocol\n");
+			break;
+		case HLS_FLV : /* use another method */
+			hls_dbg("===> flv protocol\n");
+			goto fail0;
+			break;
+		default:
+			hls_dbg("===> unknow protocol\n");
+			goto fail0;
+			break;
+	}
 	
 	/* create a virtual network file livetv.ts */
 	char *file_name = "livetv.ts";
@@ -298,9 +359,6 @@ int main(int argc, char *argv[])
 	pre_hls_obj = hls_obj;
 
 	/* init some global structs and flags */
-	/* init libcurl */
-	curl_http_init();
-
 	sem_init(&proxy_start_sem, 0, 0);
 	pthread_mutex_init(&active_live_th.mutex, NULL);
 	
@@ -356,7 +414,16 @@ fail2:
 	return HLS_SUCCESS;
 	
 fail1:
-	/* TODO */
+	/* destroy some global flag */
+	sem_destroy(&proxy_start_sem);
+	/* clean up libcurl */
+	curl_http_uninit();
+	pthread_mutex_destroy(&active_live_th.mutex);
+	return HLS_ERR;
+
+fail0:
+	/* clean up libcurl */
+	curl_http_uninit();
 	return HLS_ERR;
 }
 #else

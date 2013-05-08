@@ -28,7 +28,6 @@ typedef unsigned char u8;
 typedef unsigned short int u16;
 typedef unsigned int u32;
 
-
 #define HLS_ERR		-1
 #define HLS_FALSE	0
 #define HLS_TRUE	1
@@ -37,6 +36,8 @@ typedef unsigned int u32;
 #define HLS_SUCCESS 4
 #define HLS_REDIRECT 302
 #define HLS_EXIT HLS_TRUE
+#define HLS_M3U8	5
+#define HLS_FLV		6
 
 /* debug test */
 //#define __THREAD_EXIT_TEST_

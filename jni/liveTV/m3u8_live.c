@@ -497,7 +497,7 @@ static int hls_update_playlist(HLSContext *hls_ctx, char *url, struct variant *v
 /**
  * parsing if the body is a valid m3u8 playlist
  */
-static int isHTTPLiveStreaming(char *s)
+/* static */ int isHTTPLiveStreaming(char *s)
 {
 	const char *peek = s;
 
@@ -556,15 +556,15 @@ static int isHTTPLiveStreaming(char *s)
  * hls url probe
  * [same function with isHTTPLiveStreaming()]
  */
-static int hls_url_probe(char *url)
+/* static */ int hls_url_probe(char *s)
 {
-	hls_dbg("%s\n", url);
+	//hls_dbg("%s\n", url);
 
-	if (strncmp(url, "#EXTM3U", 7))
+	if (strncmp(s, "#EXTM3U", 7))
 		return HLS_FALSE;
-	if (strstr(url, "#EXT-X-STREAM-INF:") ||
-			strstr(url, "EXT-X-TARGETDURATION:") ||
-			strstr(url, "EXT-X-MEDIA-SEQUENCE:"))
+	if (strstr(s, "#EXT-X-STREAM-INF:") ||
+			strstr(s, "EXT-X-TARGETDURATION:") ||
+			strstr(s, "EXT-X-MEDIA-SEQUENCE:"))
 		return HLS_TRUE;
 
 	return HLS_FALSE;
